@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Pacifico&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
     <title>project_1</title>
 
 </head>
 <style>
+    ul{
+        list-style: none;
+    	margin: 0;
+    }
+    ol{
+        list-style: none;
+	    margin: 0;
+    }
+    .font_1{
+        font-family: 'Open Sans', sans-serif;
+    }
     .backgraund1{
         background: #C4C4C433;
     }
     .conteiner{
-        max-width: 1400px;
-        margin: auto;
+        max-width:1296px;
+        margin:0 auto;
     }
     .float_left{
         float: left;
@@ -32,40 +46,175 @@
     .wolf_house_position{
         margin-top: 27px;
         margin-left: 9px;
-        font-size: 24px;
+        font-size: 18px;
+        font-weight: 700;
+        
     }
     .poisk1{
         height: 40px;
         width: 540px;
         border-radius: 20px;
         
+        background: url(image/Search.png)  5% no-repeat;
+        background-size: 15px 15px;
         background-color: white;
+       
         margin-top: 21px;
+        margin-left: 54px;
+        
+        
+        
+    }
+    .text_poisk {
+        opacity: 0.5;
+        margin-left: 51px;
+        margin-top: 9px;
+        width: 240px;
+        height: 22px;
+    }
+    .basket{
+        width: 20px;
+        height: 20px;
+        margin-right: 90px;
+    }
+    .list1{
+        margin-top: 32px;
+        margin-left: 0;
+        font-weight: 400;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .flag_usa{
+        background: url(image/flag_usa.png) left no-repeat;
+        background-size: 30px 18px;
+    }
+    .button1{
+        background-color: #0772BF;
+        border-radius: 4px;
+        Width : 145px;
+        Height : 40px;
+        margin-left: 35px;
+        margin-top: 20px;
+        vertical-align: middle;
+        color:#fff;
+        margin-bottom: 20px;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+    .margin_2_strong{
+        margin-top: 30px;
+        letter-spacing: 0.01em;
+        margin-left: -15px;
+    }
+    .vertikal_align1{
+       margin-top: 10px;
+    }
+    .st_banner_1{
+        background: url(image/st_banner_1.png) no-repeat;
+    }
+    .spacer{
+        width: 0px;
+        height: 464px;
+    }
+    .blok3{
+        Width: 675px;
+        Height: 44px;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 127px;
+        margin-left: 153px;
+        letter-spacing: 0.05em;
+        line-height: 44px;
+        font-weight: 700;
+    }
+    .clear_both{
+        clear: both;
+    }
+    .border_top{
+        padding-top:  1px;
+    }
+    .strong_2{
+        width: 656px;
+        height: 22px;
+        color:#fff;
+        margin-top: 12px;
+        margin-left: 153px;
+        letter-spacing: 0.01em;
+
+    }
+    .button_button{
+        width: 144px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        border-radius: 36px;
+        color:#fff;
+        margin-top: 48px;
+        margin-left: 149px;
+
+    }
+    .strong_button{
+        margin-left: 47px;
+        margin-top: 9px;
+        letter-spacing: 0.04em;
+    }
+    .letter_spacing{
+         letter-spacing: 0.01em;
+         line-height: 22px;
+    }
+    .color_red{
+        color:#FF0C0C;
     }
 </style>
 <body>
     <div class="backgraund1">
-        <div class="conteiner  border1">
+        <div class="conteiner  ">
             <div class="float_left image_wolf">
                 <img src="image/wolf.png" alt="">
             </div>
-            <div class="float_left  wolf_house_position">
+            <div class="float_left font_1  wolf_house_position">
                <b> Wolf Hous </b>
             </div>
+            <div class="poisk1  float_left">
+                <div class="text_poisk font_1">Search brands, gear and guides</div>
+            </div>
             <div class="float_right ">
-                <ul>
-                    <li class=" margin-left " >En</li>
-                    <li class=" margin_left "> My account</li>
-                    <li class="margin_left "> USD  </li>
-                    
+                <ul class="list1 float_left">
+                    <ol class=" float_left  font_1 " >En </ol>
+                    <ol class=" float_left  font_1 flag_usa "> My account</ol>
+                    <ol class="float_left  font_1"> USD  </ol>
+                    <ol class=" float_left "> <img src="image/basket.png" alt="" class="basket"> </ol>
                 </ul>
             </div>
-            <div class="poisk1  float_right">
-                поиск
-            </div>
-            <div style="clear: both;"></div>
+            
+            <div class="clear_both"></div>
         </div>
 
+    </div>
+    <div>
+        <div class="conteiner">
+            <div>
+                <ul >
+                    <ol class="float_left button1"> <div class="vertikal_align1 font_1">Categories</div> </ol>
+                    <ol class="float_left margin_2_strong letter_spacing font_1">Ski bouts</ol>
+                    <ol class="float_left margin_2_strong letter_spacing font_1">Ski accessoiries</ol>
+                    <ol class="float_left margin_2_strong letter_spacing font_1">Apperel</ol>
+                    <ol class="float_left margin_2_strong letter_spacing font_1">Snowboard shop</ol>
+                    <ol class="float_left margin_2_strong letter_spacing font_1">Brands</ol>
+                    <ol class="float_left margin_2_strong letter_spacing font_1 color_red">Sale</ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear_both "></div>
+    <div class="">
+        <div class="conteiner st_banner_1 border_top">
+            <img src="image/st_banner_1.png" alt="" class="spacer float_left" > 
+            <div class="blok3 font_1"> New ATOMIC collection with nano-techs.</div> 
+            <div class=" strong_2 font_1 "> Check our new 2021 collection for freeride.</div>
+            <div class="button_button"> <div class="strong_button font_1 "> Button  </div> </div>
+
+            <div class="clear_both"></div> 
+        </div>
     </div>
 </body>
 </html>
