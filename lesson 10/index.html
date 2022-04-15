@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li {
+        width: 50px;
+    }
+    td{
+        border:solid 1px ;
+        
+    }
+    table{
+        border-collapse: collapse;
+    }
+    div div table tr:nth-child(1) td:first-child {
+        background-color:  brown;
+    }
+    div div table tr:nth-child(1) td:last-child {
+        background-color:  cadetblue;
+    }
+    div div table tr:nth-child(2) td:first-child {
+        background-color:  chartreuse;
+    }
+    div div table tr:nth-child(2) td:last-child {
+        background-color:  coral;
+    }
+    div div table tr:nth-child(3)  {
+        background-color:  crimson;
+    }
+    div ul li:nth-child(1) {
+        background-color: red;
+    }
+    div ul li:nth-child(2) {
+        background-color: green;
+    }
+    div ul li:nth-child(3) {
+        background-color: blue;
+    }
+    div ul li:nth-child(4) {
+        background-color: yellow;
+    }
+    div p span em{
+        background-color: violet;
+    }
+    p strong a {
+        background-color: aqua;
+    }
+    p i a {
+        background-color: gray;
+    }
+    ul li:nth-child(1) strong{
+        background-color: chocolate;
+    }
+    ul li:nth-child(2) em a{
+        background-color: orange;
+    }
+    ul li:nth-child(3) span em a{
+        background-color: indianred;
+    }
+</style>
+<body>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <td>brown</td>
+                    <td>cadetblu</td>
+                </tr>
+                <tr>
+                    <td>chart</td>
+                    <td>coral</td>
+                </tr>
+                <tr>
+                    <td  colspan=2>crimson</td>
+
+                </tr>
+            </table>
+        </div>
+        <ul>
+            <li>red</li>
+            <li>green</li>
+            <li>blu</li>
+            <li>yellow</li>
+        </ul>
+        <p>
+            <span>
+                <em>violet</em>
+            </span>
+        </p>
+    </div>
+    <p>
+        <strong>
+            <a href="">aqua</a>
+        </strong>
+        <i>
+            <a href="">gray</a>
+        </i>
+    </p>
+    <ul>
+        <li>
+            <strong>chocolate</strong>
+        </li>
+        <li>
+            <em>
+                <a href="">orange</a>
+            </em>
+        </li>
+        <li>
+            <span>
+                <em>
+                    <a href="">indianred</a>
+                </em>
+            </span>
+        </li>
+    </ul>
+</body>
+</html>
