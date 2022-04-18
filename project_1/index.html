@@ -11,11 +11,7 @@
 
 </head>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+   
     .margin_auto{
         margin: auto;
     }
@@ -56,20 +52,21 @@
         margin-left: 9px;
         font-size: 18px;
         font-weight: 700;
-        
+        margin-right: 74px;
     }
     .poisk1{
         height: 40px;
-        width: 540px;
+        max-width:  540px;
+        min-width: 300px;
         border-radius: 20px;
-        
+        overflow: hidden;
         background: url(image/Search.png)  5% no-repeat;
         background-size: 15px 15px;
         background-color: white;
        
         margin-top: 21px;
         margin-left: 54px;
-        
+        margin-bottom: 11px;
         
         
     }
@@ -336,7 +333,7 @@
     .sell{
         width: 272px;
         height: 400px;
-       
+      
     }
     .conteiner3{
         margin-right: 80px;
@@ -423,21 +420,44 @@
     .overflow_hidden{
         overflow: hidden;
     }
-    div div div ul{ margin-left: 32px;}
+    .margin_21px{
+        margin-bottom: 16px;
+    }
+    .conteiner5{
+        max-width: 880px;
+    }
+    .page_bottom{
+        width: 64.4px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid #BFBEBE;
+    }
+    .page_left{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #BFBEBE;
+    }
+    .conteiner4{
+        height: 32px;
+    }
+    
 </style>
 <body>
     <div class="backgraund1">
-        <div class="conteiner  ">
+        <div class="conteiner border_top ">
+            <div>
             <div class="float_left image_wolf">
                 <img src="image/wolf.png" alt="">
             </div>
             <div class="float_left font_1  wolf_house_position">
                <b> Wolf Hous </b>
             </div>
-            <div class="poisk1  float_left">
-                <div class="text_poisk font_1">Search brands, gear and guides</div>
             </div>
-            <div class="float_right ">
+            <div class="float_right margin_21px">
                 <ul class="list1 float_left">
                     <ol class=" float_left  font_1 " >En </ol>
                     <ol class=" float_left  font_1 flag_usa "> My account</ol>
@@ -445,7 +465,9 @@
                     <ol class=" float_left "> <img src="image/basket.png" alt="" class="basket"> </ol>
                 </ul>
             </div>
-            
+            <div class="poisk1  ">
+                <div class="text_poisk font_1 ">Search brands, gear and guides</div>
+            </div>
             <div class="clear_both"></div>
         </div>
 
@@ -547,6 +569,7 @@
                 </div>
                 
             </div>
+            <div class="float_left conteiner5">
             <div class=" padding_30px  overflow_hidden">
                 
                 <div class="float_left sell">
@@ -681,7 +704,7 @@
                     </div>
                 </div>
 
-                <div class="float_left  image_mountains">
+                <div class="float_left sell image_mountains">
                     <div class="image_align"> <img src="image/mountains.png" alt=""  class="image_align"></div>
                     <div class="strong_snowboard image_align margin_auto ">
                         <span class="strong_snowboard_5 ">EVO TRIP</span> <br>
@@ -693,16 +716,23 @@
                     </div>
                 </div>
                 <div class="clear_both"></div>
-                <div class="margin_auto"> 
-                    <div class="">
+                <div class="margin_auto conteiner4"> 
+                    <div class="float_left">
                         Page
                     </div>
-
+                    <div class="page_bottom float_left ">
+                        <div class="margin_auto font_1">3</div>
+                    </div>
+                    <div class="float_left">
+                        of 25
+                    </div>
                 </div>
             </div>
             <div class="clear_both"></div>
         </div>
+        </div>
     </div>
+    <div class="clear_both"></div>
 <div style="height: 100px;"></div>
 </body>
 </html>
