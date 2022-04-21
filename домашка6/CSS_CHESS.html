@@ -13,29 +13,28 @@
       height: 50px;
       border: solid gray 1px;
     }
-     tr:nth-child(odd) td:nth-child(even){
+     tr:nth-of-type(odd) td:nth-of-type(even){
          background-color: black;
      }
-     tr:nth-child(even) td:nth-child(odd){
+     tr:nth-of-type(even) td:nth-of-type(odd){
          background-color: black;
      }
-    body table tr:last-child td:nth-child(odd){
-        background-color: aqua;
-        
-    }
-    body table tr:last-child td:nth-child(even){
-        background-color: aqua;
-        
-    }
-    body table tr:first-child td:nth-child(odd){
-        background-color: aqua;
-    }
-    body table tr:first-child td:nth-child(even){
-        background-color: aqua;
-    }
-    body table tr:last-child   {
-        background-color: aqua;
-    }
+    body table.CHESS tr:first-of-type td {
+       background-color: aqua;
+       height: 20px;
+     }
+     body table.CHESS tr:last-of-type td {
+       background-color: aqua;
+       height: 20px;
+     }
+     table.CHESS tr td:first-of-type{
+       background-color: aqua;
+       width: 20px;
+     }
+     table.CHESS tr td:last-of-type{
+       background-color: aqua;
+       width: 20px;
+     }
   </style>
 <body>
 
