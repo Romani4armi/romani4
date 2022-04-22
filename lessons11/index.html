@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>*** unnamed text ***</title>
+    <style>
+
+        table.CHESS
+        {
+          border-collapse: collapse;
+        }
+      
+        table.CHESS td
+        {
+          width: 50px;
+          height: 50px;
+          border: solid gray 1px;
+        }
+     table{
+         counter-reset: planet 0;
+     }
+        td::before{
+
+    
+counter-increment: planet+1  ;
+content: ' ' counter(planet) 
+}
+     
+     /* p{counter-reset: planet ;}
+      td::before{
+
+    
+        counter-increment: planet -1 ;
+        content: ' ' counter(planet) 
+    }
+       */
+
+      </style>
+</head><body>
+
+
+<table class='CHESS'>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+</body></html>
