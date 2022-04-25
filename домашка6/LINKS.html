@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .clearfix::after{
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .class_1{
+            margin: 10px;
+        }
+        div.class_1 li{
+            float: left;
+            padding:0px 10px;
+            list-style-type: none;
+        }
+        div.class_1 a{
+            color: green;
+            margin-bottom: 5px;
+        }
+        div.class_1 img{
+            float: right;
+        }
+
+        .class_2{
+            margin: 10px;
+        }
+        div.class_2 a{
+            padding: 5px 8px;
+            color: green;
+            border-right: solid 3px red ;
+        }
+        div.class_2 a:last-child{
+            border-right: none;
+        }
+        .class_3{
+            margin: 10px;
+        }
+        div.class_3 div{
+            float: left;
+            margin: 0px 10px;
+        }
+        div.class_3 a{
+            color: green;
+        }
+        div a:hover{
+            color: red;
+        }
+        div.class_3 div{
+            background: url(image/line.png) right no-repeat;
+        }
+        div.class_3 a{
+            margin-right: 10px;
+        }
+        div.class_3 div:last-child{
+            background-image: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="class_1 clearfix"> 
+        <ul>
+            <li> <a href="https://www.youtube.com/">первая ссылка</a> <img src="image/line.png" alt=""> </li>
+            <li> <a href="https://www.onliner.by/">вторая ссылка</a> <img src="image/line.png" alt=""></li>
+            <li> <a href="https://av.by/">третья ссылка</a> <img src="image/line.png" alt=""> </li>
+            <li> <a href="https://www.kufar.by/l"> четвертая ссылка</a><img src="image/line.png" alt=""></li>
+            <li> <a href="https://vk.com/">пятая ссылка</a>  </li>
+        </ul>
+    </div>
+
+    <div class="class_2">
+        <a href="https://www.youtube.com/">первая ссылка </a>
+        <a href="https://www.onliner.by/">вторая ссылка</a>
+        <a href="https://av.by/">третья ссылка</a>
+        <a href="https://www.kufar.by/l">четвертая ссылка</a>
+        <a href="https://vk.com/">пятая ссылка</a>
+    </div>
+        
+    <div class="class_3">
+        <div><a href="https://www.youtube.com/">первая ссылка </a> </div>
+        <div><a href="https://www.onliner.by/">вторая ссылка</a> </div>
+        <div><a href="https://av.by/">третья ссылка</a>  </div>
+        <div><a href="https://www.kufar.by/l">четвертая ссылка</a> </div>
+        <div><a href="https://vk.com/">пятая ссылка</a> </div>
+    </div>
+
+</body>
+</html>
