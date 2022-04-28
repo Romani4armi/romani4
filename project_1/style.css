@@ -154,9 +154,22 @@ div.menu_top ul{
 
 }
 .strong_button{
-    margin-left: 47px;
-    margin-top: 9px;
+    margin-left: 150px;
+    margin-top: 49px;
     letter-spacing: 0.04em;
+    width: 144px;
+    height: 40px;
+    border:solid 1px #fff;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+div.strong_button div{
+    margin-top: 8px;
 }
 .letter_spacing{
      letter-spacing: 0.01em;
