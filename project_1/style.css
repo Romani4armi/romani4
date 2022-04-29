@@ -18,6 +18,7 @@ ol{
 .conteiner{
     max-width:1296px;
     margin:0 auto;
+    
 }
 .float_left{
     float: left;
@@ -80,11 +81,12 @@ ol{
     background-size: 30px 18px;
 }
 .button1{
+    text-align: center;
     background-color: #0772BF;
     border-radius: 4px;
     Width : 145px;
     Height : 40px;
-    margin-left: 35px;
+    margin-left: 80px;
     margin-top: 20px;
     vertical-align: middle;
     color:#fff;
@@ -92,16 +94,24 @@ ol{
     letter-spacing: 0.03em;
     margin-bottom: 20px;
 }
+div.menu_top ul{
+    padding: 0;
+}
+.menu_top{
+    margin-right: 50px;
+}
 .margin_2_strong{
     margin-top: 30px;
     letter-spacing: 0.01em;
     margin-left: -15px;
+    margin-bottom: 20px;
 }
 .vertikal_align1{
    margin-top: 10px;
 }
 .st_banner_1{
     background: url(image/st_banner_1.png) no-repeat;
+    background-size: contain;
 }
 .spacer{
     width: 0px;
@@ -144,9 +154,22 @@ ol{
 
 }
 .strong_button{
-    margin-left: 47px;
-    margin-top: 9px;
+    margin-left: 150px;
+    margin-top: 49px;
     letter-spacing: 0.04em;
+    width: 144px;
+    height: 40px;
+    border:solid 1px #fff;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+div.strong_button div{
+    margin-top: 8px;
 }
 .letter_spacing{
      letter-spacing: 0.01em;
@@ -162,7 +185,6 @@ ol{
     font-size: 32px;
     line-height: 44px;
     margin-top: 61px;
-    margin-left: 80px;
     letter-spacing: 0.03em;
 }
 .Matches_found{
@@ -171,7 +193,13 @@ ol{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 6px;
+    margin-top: 11px;
+    margin-left: -50px;
+   
+}
+.clearfix:after{content:"."; visibility: hidden;display: block;height: 0;clear: both; }
+.content_1{
+   padding-left: 50px;
 }
 .Cattegories{
     font-family: 'Open Sans';
@@ -181,8 +209,6 @@ ol{
     line-height: 22px;
     letter-spacing: 0.03em;
     margin-top: 6px;
-    margin-left: 80px;
-    margin-right: 196px;
 
 }
 .block_view{
@@ -190,9 +216,9 @@ ol{
     height: 44px;
     border: 1px solid #C8C8C8;
     border-radius: 4px;
-    margin-top: -5px;
-    margin-right: 65px;
-   
+  
+    margin-left: 20px;
+    margin-bottom: 42px;
    
 }
 .block_view_1{
@@ -222,8 +248,8 @@ ol{
     height: 32px;
     background: #FFFFFF;
     border: 1px solid #BFBEBE;
-    margin-top: 1px;
-    margin-right: 80px;
+    margin-top: 6px;
+    margin-left: 65px;
 }
 .block_Sort_By_1{
     width: 58.84px;
@@ -263,13 +289,12 @@ ol{
     line-height: 22px;
     letter-spacing: 0.03em;
     color: #BFBEBE;
-    margin-left: 80px;
-    margin-top: 15px;
+    margin-top: 26px;
 }
 .conteiner2{
     width: 256px;
     float: left;
-    margin-left: 80px;
+   
 }
 .View_more{
     width: 256px;
@@ -283,6 +308,9 @@ ol{
     margin-top: 11px;
     padding-bottom: 11px;
     border-bottom: solid #BFBEBE 1px;
+}
+.menu_matches{
+    margin-top: 100px;
 }
 .View_more2{
     margin-top: 74px;
@@ -322,7 +350,8 @@ ol{
  
 }
 .conteiner3{
-    margin-right: 80px;
+    margin-right: 30px;
+    margin-left: 80px;
 }
 .image_align{
     text-align: center;
@@ -456,12 +485,20 @@ div.page_bottom div{
     margin: auto;
     margin-top: 15px;
 }
+.border_bottom{
+    border-bottom: solid 1px #A9A9A9;
+}
+hr{
+    margin-left: 80px;
+    margin-right: 80px;
+}
 .block_Best_Sellers{
     background: #FFFFFF;
     border: 1px solid #BFBEBE;
     box-sizing: border-box;
     margin-right: 16px;
-    Width :272px;
+    min-width :200px;
+    width:21.4% ;
     height: 272px;
     padding: 16px;
     float: left;
@@ -501,7 +538,12 @@ hr{
     text-align: center;
 }
 .conteiner6{
+<<<<<<< HEAD
     width:    580px;
+=======
+     width:   50%;
+     min-width: 204px;
+>>>>>>> a516679f2e5b0e8812466d2ff788d5df7151d95b
     height: 203px;
     text-align: center;
     float: left;
@@ -603,7 +645,8 @@ hr{
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
-   padding-left: 100px;
+    margin-left: 90px;
+    padding-left: 0;
 }
 ul.strong_footer ol{
     float: left;
@@ -628,7 +671,8 @@ div.strong_footer_2 ul{
    
     padding: 0;
     margin-top: 35px;
-    width: 287px;
+    max-width: 287px;
+    width: 25%;
 }
 div.strong_footer_2 ul ol{
     font-weight: 400;
@@ -672,4 +716,7 @@ div.strong_footer_2 ul:first-child{
 div.strong_footer_4 span:first-child {
     margin-right: 16px;
    
+}
+.margin_left_80px{
+    margin-left: 80px;
 }
