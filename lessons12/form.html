@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            margin-left: 7px;
+            margin-right: 2px;
+        }
+        .c{
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        fieldset{
+            border: solid 2px red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+        Фамилия:
+        <input type="text" name="surname" > <br>
+        Имя:
+        <input type="text" name="name" > <br>
+        Отчество:
+        <input type="text" name="patronamic" > <br>
+        E-mail для связи:
+        <input type="email" name="e-mail" > <br>
+        Согласен с првилами сайта:
+        <input type="checkbox" name="sogl">
+        <input type="submit" value="регистрация">
+        <hr>
+        <fieldset>
+            <legend>информация</legend>
+        Вид деятельности <br>
+        пенсионер:
+        <input type="radio" name="vid" value="1"> <br>
+        студент:
+        <input type="radio" name="vid" value="2"> <br>
+        рабочий:
+        <input type="radio" name="vid" value="3"> <br>
+        безработный:
+        <input type="radio" name="vid" value="4"> <br> <br> <br>
+
+        
+        категории прав: <br>
+        <span>  a</span> <span> ab </span> <span> b </span><span class="c"> c </span><span> d </span><span> de </span> <br>
+        
+        <input type="checkbox" name="a">
+        <input type="checkbox" name="ab">
+        <input type="checkbox" name="b">
+        <input type="checkbox" name="c">
+        <input type="checkbox" name="d">
+        <input type="checkbox" name="de">
+        <br> <br>
+        ваша зарплата:
+            <select name="zp" >
+                <option value="zp1"> 100$ </option>
+                <option value="zp2"> 200$ </option>
+                <option value="zp3"> 400$ </option>
+                <option value="zp4"> 500$ </option>
+                <option value="zp5"> 700$ </option>
+                <option value="zp6"> 1000$ </option>
+            </select>
+        <input type="submit" value="поиск">
+    </fieldset>
+    </form>
+</body>
+</html>
