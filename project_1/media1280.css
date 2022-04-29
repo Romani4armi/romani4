@@ -108,6 +108,9 @@ div div.conteiner6{
         margin-left: 80px;
         margin-top: 40px
     }
+    .poisk1{
+        margin-right: 30px;
+    }
 }
 @media all and (max-width:760px){
     div.margin_21px ul ol:first-child,div.margin_21px ul{
