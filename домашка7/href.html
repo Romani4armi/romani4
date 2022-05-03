@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-     h2{
+    <style>
+         h2{
         font-size: 2em;
     }
     p{
@@ -22,11 +22,14 @@
         color:red;
         font-style: normal;
     }
-    a::before{
-        content: url(image/extref.png) ' ' ;
+    a{
+        padding-left: 15px;
+        background: url(image/extref.png) left center no-repeat;
     }
-   
-</style>
+    @media print {
+        a
+    }
+    </style>
 </head>
 <body>
     <h2>Михаил Ботвинник</h2>
@@ -69,6 +72,7 @@
           объявил о прекращении матча, мотивировав это исчерпанием физических и психических ресурсов участников, и повторном матче между этими же соперниками в 1985 году. При этом и
            Карпов, и Каспаров выразили готовность продолжать матч;
          Каспаров на той же пресс-конференции обвинил Кампоманеса, что тот решил прервать матч только тогда, когда претендент получил шансы на победу.</p>
+
 
 </body>
 </html>

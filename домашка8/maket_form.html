@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .textarea_modern{
+            width: 100%;
+            overflow: hidden;
+        }
+        div{
+            margin: 10px;
+        }
+        .radio_0{
+            margin: 0;
+            float: left;
+        }
+        .clearfix::after{
+            content: "."; visibility: hidden; display: block; height: 0; clear: both;
+        }
+        .select_0{
+            margin-left: 50px;
+           
+        }
+        .heading_0{
+            float: left;
+            margin: 0;
+                }
+       
+        @media all and (max-width:468px) {
+            .radio_0{
+                float: none;
+            }
+        }
+        @media all and (max-width:330px){
+            .select_0{
+            margin: 0px;
+           
+        }
+        .heading_0 {
+        float: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму</div>
+        
+        <div> Название статьи:</div> 
+        <div class="claerfix"> 
+            <div class="heading_0">Рубрика:</div>
+        
+            <div class="heading_0" > 
+                <select name="heading" class="select_0">
+                    <option value="heading0">  </option>
+                    <option value="heading1"> программирование </option>
+                    <option value="heading2"> безопасность </option>
+                    <option value="heading3"> маркетинг </option>
+                    <option value="heading4"> медицина </option>
+                    <option value="heading5"> наука </option>
+                </select> </div>
+                <div style="clear: both;"></div>
+        </div>
+        <div class="clearfix"> 
+            <div  class="radio_0"> Публикация:</div>
+            <div class="radio_0"><input type="radio" name="publication" value="publication1">  на сайте </div> 
+            <div class="radio_0"><input type="radio" name="publication" value="publication1">  в журнале</div>
+            <div class="radio_0"><input type="radio" name="publication" value="publication1">  на сайте и в журнале</div>
+        </div>
+        
+        <div> Разрешить комметарии
+        <input type="checkbox" name="comments"> 
+        </div>
+        <div>Текст статьи: 
+        <textarea name="mytext" class="textarea_modern"></textarea> </div>
+        <div>  <input type="submit" value="Опубликовать"></div>
+    </form>
+</body>
+</html>
