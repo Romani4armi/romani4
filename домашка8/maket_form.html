@@ -28,6 +28,13 @@
             float: left;
             margin: 0;
                 }
+        .nazv_0{
+            width: 100%;
+
+        }
+        .nazv_1{
+            float: left;
+        }
        
         @media all and (max-width:468px) {
             .radio_0{
@@ -42,6 +49,7 @@
         .heading_0 {
         float: none;
         }
+       
         }
     </style>
 </head>
@@ -49,7 +57,11 @@
     <form action="https://fe.it-academy.by/TestForm.php" method="POST">
         <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму</div>
         
-        <div> Название статьи:</div> 
+        <div class="nazv_1"> Название статьи:</div> 
+        <div class="nazv_1">
+            <textarea name="nazv"  class="nazv_0"></textarea>
+        </div>
+        <div style="clear: both;"></div>
         <div class="claerfix"> 
             <div class="heading_0">Рубрика:</div>
         
