@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKET_DIV</title>
+    <style>
+        ul{
+            margin-bottom: 0;
+        }
+        .heder{
+            background-color: rgb(174,216,229) ;
+            text-align: center;
+            color: blue ; 
+            font-size:40px;
+            padding: 10px;
+        }
+        .backgraund_1{
+            background: url(image/ball.png) right repeat-y, url(image/backgraund.png) 30% top repeat-y;  overflow: hidden;
+        }
+        .container_1{
+            width: 30%;
+            min-width: 220px;
+            
+            font-size:24px  ; 
+            float:left;
+           
+        }
+        div.container_1 div{
+            margin: 10px;
+        }
+        .container_2{
+            width: 70%; 
+            min-width:320px;;
+            float: right; 
+            overflow: hidden; 
+           
+        }
+        div.container_2 div{
+            font-size: 30px;
+            text-align: center;
+            font-size: 24px;
+        }
+        div.container_2 div{
+            margin: 10px;
+            margin-right: 50px;
+        }
+        img{
+            float: left;
+        }
+        .clearfix::after{
+            content: "."; visibility: hidden; display: block; height: 0; clear: both;
+        }
+        .footer{
+            background-color: rgb(174,216,229) ;
+            text-align: center;
+            color:blue;
+            font-size: 40px;
+            padding: 10px;
+        }
+        .check_0{
+            width: 100px;
+            height: 50px;
+            border: solid 1px green;
+            background-color: yellowgreen;
+            position: sticky;
+            float: right;
+            text-align: center;
+            font-size: 16px;
+            top: 40px;
+            right: 40px;
+            padding-top: 7px;
+        }
+        .check_0:hover{
+            width: 110px;
+            height: 55px;
+            font-size: 24px;
+            padding-top: 0px;
+        }
+        @media  all and (max-width:770px) {
+            
+            .container_1{
+                width: 100%;
+            
+            font-size:24px  ; 
+            float: none;
+            margin: auto;
+            background-color: rgb(240,229,145);
+            }
+            .backgraund_1{
+                background:none;
+                background: url(image/ball.png) right repeat-y; overflow: hidden;
+
+            }
+            .container_2{
+            width:100%; 
+           
+            float: none; 
+            overflow: hidden; 
+           
+        }
+        div.container_1 p{
+            margin-top: 0;
+            padding-top: 20px;
+            text-align: center;
+        }
+        div.container_1 div{
+            margin-top: 0;
+        }
+        }
+        @media  all and (max-width:410px){
+            .heder{
+           
+            font-size:30px;
+            
+        }
+        .footer{
+           
+            font-size: 30px;
+           
+        }
+        }
+        @media  all and (max-width:359px){
+            .backgraund_1{
+                background:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="check_0"> <a href="maket_form.html"> вступить в клуб</a></div>
+    <div class="heder"> <span ><b> ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</b></span>
+       
+    </div>
+   
+    <div class="backgraund_1 claerfix" >
+        <div class="container_1"> 
+            <div > <p><b>Виды спорта</b></p>
+                <ul> 
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82">конькобежный спорт</a> </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> биатлон </a>  </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB"> футбол  </a></li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D0%B1%D0%B0_%D0%B8%D0%B7_%D0%BB%D1%83%D0%BA%D0%B0"> стрельба из лука  </a></li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B4%D0%BB%D0%B8%D0%BD%D1%83"> прыжки в длину  </a> </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83"> прыжки в высоту </a> </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B5_%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D0%B5"> фигурное катание </a> </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"> синхронное плавание </a> </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%8B"> шахматы </a> </li>
+                <li> <a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%88%D0%BA%D0%B8"> шашки  </a></li>
+            </ul>
+             </div>
+            
+        </div>
+        <div class="container_2">  
+            <div > <p> <b> ФУТБОЛ</b>  </p>
+
+                <img src="image/group.png" alt="adf" style="float: left;   ">
+            <p >Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук)
+                большее количество раз, чем команда соперника.
+            </p>
+            <p >Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти првила предназначены 
+                для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными 
+                физическими возможностями. Законы очень часто формулировалисьв общих чертах, которые позволяют упростить их применения в зависимости от характера 
+                игры.
+            </p>
+            </div>
+           
+        </div>
+        
+        
+    </div>
+    
+    <div  class="footer"><span  ><b>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</b></span></div>
+    <a href = "../index.html"  target="_parent" > на главную </a>
+</body>
+</html>
