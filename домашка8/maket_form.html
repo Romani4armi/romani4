@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            padding: 10px;
+        }
         .textarea_modern{
             width: 100%;
             overflow: hidden;
+           
+        }
+        .textarea_div{
+            margin-right: 0px;
         }
         div{
-            margin: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .radio_0{
             margin: 0;
@@ -27,30 +35,48 @@
         .heading_0{
             float: left;
             margin: 0;
+            margin-right: 140px;
                 }
+        .heading_1{
+            float: left;
+            margin: 0;
+        }
         .nazv_0{
-            width: 100%;
-
+           width: 100%;
+            
         }
         .nazv_1{
             float: left;
+            margin-right: 79px;
+            width: 170px;
+        }
+        .nazv_2{
+           
+          
+            margin-left: 250px;
         }
        
         @media all and (max-width:468px) {
             .radio_0{
                 float: none;
             }
-        }
-        @media all and (max-width:330px){
+            .nazv_1{
+                float: none;
+               
+            }
+            .nazv_2{
+                margin-left: 0;               
+            }
+            .heading_0 {
+                float: none;
+            }
             .select_0{
-            margin: 0px;
+            margin: 10px 0px ;
+            
            
         }
-        .heading_0 {
-        float: none;
         }
-       
-        }
+        
     </style>
 </head>
 <body>
@@ -58,14 +84,14 @@
         <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму</div>
         
         <div class="nazv_1"> Название статьи:</div> 
-        <div class="nazv_1">
-            <textarea name="nazv"  class="nazv_0"></textarea>
+        <div class="nazv_2">
+           <textarea name="nazv"  class="nazv_0"></textarea>  
         </div>
         <div style="clear: both;"></div>
         <div class="claerfix"> 
             <div class="heading_0">Рубрика:</div>
         
-            <div class="heading_0" > 
+            <div class="heading_1" > 
                 <select name="heading" class="select_0">
                     <option value="heading0">  </option>
                     <option value="heading1"> программирование </option>
@@ -73,8 +99,9 @@
                     <option value="heading3"> маркетинг </option>
                     <option value="heading4"> медицина </option>
                     <option value="heading5"> наука </option>
-                </select> </div>
-                <div style="clear: both;"></div>
+                </select>
+            </div>
+            <div style="clear: both;"></div>
         </div>
         <div class="clearfix"> 
             <div  class="radio_0"> Публикация:</div>
@@ -86,7 +113,7 @@
         <div> Разрешить комметарии
         <input type="checkbox" name="comments"> 
         </div>
-        <div>Текст статьи: 
+        <div class="textarea_div">Текст статьи: 
         <textarea name="mytext" class="textarea_modern"></textarea> </div>
         <div>  <input type="submit" value="Опубликовать"></div>
     </form>

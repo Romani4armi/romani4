@@ -27,7 +27,13 @@
         background: url(image/extref.png) left center no-repeat;
     }
     @media print {
-        
+        a{
+            visibility: hidden;
+        }
+        a[href]:after {
+            content: " (" attr(href) ")";
+            visibility: visible;
+    }
     }
     </style>
 </head>
