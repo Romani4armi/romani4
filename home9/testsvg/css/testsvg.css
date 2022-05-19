@@ -1,3 +1,6 @@
-
+svg:hover line {
+  stroke: red; }
+svg:hover rect {
+  stroke: red; }
 
 /*# sourceMappingURL=testsvg.css.map */

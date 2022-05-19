@@ -1,0 +1,59 @@
+header{
+    display: flex;
+    justify-content: space-evenly
+}
+div{
+    height: 50px;
+    margin: 10px;
+    flex-basis: 200px;
+
+}
+@keyframes anim1{
+    from{background-color: yellow;}
+    to{background-color: green;}
+}
+@keyframes anim2{
+    from{background-color: rgb(153, 0, 255);}
+    to{background-color: rgb(128, 0, 83);}
+}
+@keyframes anim3{
+    from{ border: solid 1px ;}
+    to{  border: solid 3px ;}
+}
+@keyframes anim4{
+    from{height: 50px;}
+    to{height: 100px;}
+}
+@keyframes anim5{
+    from{left: 0px;bottom: 0px;}
+    25%{left:-800px; bottom: 0px;}
+    50%{left:-800px; bottom: -500px;}
+    75%{left: 0px;bottom: -500px;}
+    to{left: 0px; bottom: 0px;}
+}
+
+div{
+    background-color: blue;
+}
+div:nth-child(odd){
+    background-color: orangered;
+}
+.div1{
+    background-color: yellow;
+    animation: anim1 3s infinite;
+}
+header:hover{
+    .div2{
+        animation: anim1 5s infinite;
+    }
+    .div3{
+        animation: anim3 2s infinite;
+    }
+    .div4{
+        animation: anim4 3s infinite;
+    }
+    .div5{
+        position: relative;
+        animation: anim5 5s infinite;
+    }
+}
