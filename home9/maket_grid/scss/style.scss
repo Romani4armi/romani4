@@ -1,0 +1,72 @@
+
+
+.heder{
+    background-color: rgb(174,216,229) ;
+    text-align: center;
+    color: blue ; 
+    font-size:40px;
+    padding: 10px;
+}
+.footer{
+    background-color: rgb(174,216,229) ;
+    text-align: center;
+    color:blue;
+    font-size: 40px;
+    padding: 10px;
+}
+.container{
+  display: grid;
+  grid-template-columns:200px auto ;
+}
+.container_1{
+
+    background-color: rgb(240,229,145);
+    min-width: 200px;
+}
+.container_2{
+    margin-left: 10px;
+    background: url(../image/ball.png) right repeat-y
+}
+img{
+    float: left;
+    margin-right: 10px;
+}
+div.container_2{
+    div{
+        p:first-child{
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}
+div.container_1{
+    div{
+        p:first-child{
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}
+@media all and(max-width:510px){
+    .container{
+        grid-template-rows: 500px auto 
+        
+    }
+    .container_1{
+        background-color: #fff;
+    }
+    .container_2{
+        background-image: none;
+    }
+    img{
+        width: 100%;
+        float: none;
+    }
+
+
+}
+@media all and(max-width:410px){
+    .footer, .heder{
+        font-size: 30px;
+    }
+}
