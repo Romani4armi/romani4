@@ -1,0 +1,24 @@
+
+@keyframes anim1{
+        from{background: url(../image/1.jpg)-170px -5px}
+        to{background: url(../image/1.jpg) -385px -5px}
+}
+@keyframes anim2{
+    from{background: url(../image/1.jpg)-175px -85px}
+    to{background: url(../image/1.jpg) -540px -85px}
+}
+ol{
+    width: 100px;
+    height: 50px;
+    border: solid 1px black;
+}
+.box1{
+    width: 95px;
+    height: 95px;
+    border: solid 1px black;
+   // background: url(../image/1.jpg)-170px -5px;
+    animation: anim1 1s steps(3) infinite;
+}
+ol.wolk:hover~div.box1 {
+    animation: anim2 1s steps(5) infinite;
+}

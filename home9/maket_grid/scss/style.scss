@@ -49,8 +49,11 @@ div.container_1{
 }
 @media all and(max-width:510px){
     .container{
-        grid-template-rows: 500px auto 
-        
+        grid-template-columns: none;
+    
+        grid-template-rows: 300px auto ;
+        grid-column-start: 2;
+         grid-column-end: 1;
     }
     .container_1{
         background-color: #fff;
