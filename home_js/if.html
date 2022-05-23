@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var fio;
+    var a;
+    fio=prompt('введите Фамилию');
+    fio=fio+ " " + prompt('введите имя');
+    fio=fio+ " " + prompt('введите отчество');
+    var age = parseInt(prompt('введите возраст'));
+    var sex = confirm('ваш пол мужской?');
+    if (sex=true) {sex=' женский';   } {sex='мужской'};
+    if (sex=='женский') {
+        
+    }
+    alert('вас зовут ' + fio + 'ваш возраст ' + age + 'лет. Через 5 лет вам будет ' +  (age+5) + 'вам ' + age*365 + "дней" + " ваш пол "+ sex);
+</script>
+</body>
+</html>
