@@ -4,10 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>project    </title>
 </head>
 <body>
-    
+    <div class="block_1">
+        <div class="conteiner">
+            <ul>
+                <ol>Минск</ol>
+                <ol>Магазины</ol>
+                <ol>Доставка</ol>
+            </ul>
+            <ul>
+                <ol>Кредит и рассрочка</ol>
+                <ol>Для бизнеса</ol>
+                <ol>375-29-299-99-91</ol>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="conteiner">
+            <ul>
+                <ol></ol>
+                <ol>Каталог</ol>
+                <ol> 
+                   <div class=" poisk_1"> 
+                       <div></div>
+                   </div>
+                </ol>
+                <ol>Статус заказа</ol>
+                <ol>Войти</ol>
+                <ol>Сравнение</ol>
+                <ol>Избранное</ol>
+                <ol>Корзина</ol>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <ul class="conteiner ">
+            <ol>ФОТОАППАРАТЫ</ol>
+            <ol>ОБЪЕКТИВЫ</ol>
+            <ol>СВЕТ</ol>
+            <ol>ШТАТИВЫ</ol>
+            <ol>ВИДЕОКАМЕРЫ</ol>
+            <ol>КОМПЛЕКТУЮЩИЕ</ol>
+            <ol>СКИДКИ</ol>
+            <ol>ВСЕ АКЦИИ</ol>
+        </ul>
+    </div>
+    <div class="strong_3">
+        <div class="conteiner">
+            Главная-Фотоаппараты-Беззеркальные фотоаппараты
+            <p>
+                Беззеркальные фотоаппараты <span>55</span>
+            </p>
+        </div>
+    </div>
+
+    <div class=" body_1">
+        <div class=" conteiner flex_1">
+            <div class="conteiner_1">
+                <ul>
+                    <ol class="hed">Бренд</ol>
+                    <ol> <input type="checkbox" name="comments">Sony</ol>
+                    <ol><input type="checkbox" name="comments">Panasonic</ol>
+                    <ol><input type="checkbox" name="comments">Nikon</ol>
+                    <ol><input type="checkbox" name="comments">Canon</ol>
+                    <ol><input type="checkbox" name="comments">Fujifilm</ol>
+                    <hr>
+                    <ol class="hed">Цена</ol>
+                    <ol class=" price_1">
+                        <div><span id="demo"></span> </div> 
+                        <div></div>
+                        <div> <span id="demo2"></span> </div>
+
+                    </ol>
+                    <ol>
+                        <input type="range" min="0" max="10000" value="500" class="slider" id="myRange">
+                        <input type="range" min="0" max="10000" value="9000" class="slider2" id="myRange1">
+                        <script>
+                            var slider = document.getElementById("myRange");
+                            var slider1 = document.getElementById("myRange1");
+                            var output = document.getElementById("demo");
+                            var output1 = document.getElementById("demo2");
+                           
+                            output.innerHTML = slider.value;
+                            output1.innerHTML = slider1.value;
+                            slider.oninput = function() {
+                              output.innerHTML = this.value;
+                            }
+                            slider1.oninput = function() {
+                              output1.innerHTML = this.value;
+                            }
+                            </script>
+                         
+                         
+                        </ol>
+                    <hr>
+                    <ol class="hed">Доступность</ol>
+                    <ol><input type="checkbox" name="comments">Доступные к самовывозу через 15 минут</ol>
+                    <ol><input type="checkbox" name="comments">Доступные к доставке</ol>
+                    <ol><input type="checkbox" name="comments">Товары со скидкой</ol>
+                    <hr>
+                    <ol class="hed">Назначение</ol>
+                    <ol><input type="checkbox" name="comments">Для начинающих пользователей</ol>
+                    <ol><input type="checkbox" name="comments">Для продвинутых пользователей</ol>
+                    <hr>
+                    <ol class="hed">Формат матрицы</ol>
+                    <ol><input type="checkbox" name="comments">Full frame</ol>
+                    <ol><input type="checkbox" name="comments">APS-C</ol>
+                    <ol><input type="checkbox" name="comments">Micro 4/3</ol>
+                </ul>
+            </div>
+            <div class="conteiner_2">
+                <div>Сначала популярные</div>
+                <div class="blocks">
+                    <ul>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                        <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                        <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                        <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                        <div class="buttom_old"></div>
+                        <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                        
+                    
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                        <ol><img src="image/f1.png" width="230px" height="164px" alt="">
+                            <p>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</p>
+                            <div> <span> 4.8</span> <span>35 отзывов</span></div>
+                            <div> <span class="span1">5650,00 p.</span><span class="span2">5820,00 p.</span></div>
+                            <div class="buttom_old"></div>
+                            <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>
+                            
+                        </ol>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
