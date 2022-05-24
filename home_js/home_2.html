@@ -7,24 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+
 <script>
     var fio;
     var a;
-    var b='нет';
+    var b='Нет';
     fio=prompt('введите Фамилию');
     fio=fio+ " " + prompt('введите имя');
     fio=fio+ " " + prompt('введите отчество');
     var age = parseInt(prompt('введите возраст'));
     var sex = confirm('ваш пол мужской?');
-    if (sex!=true) {sex='женский';   } else {sex='мужской'};
-    if (age>=60) { 
-        if (sex=='женский') {b='да'}
-            else{
-                if (age<=65){b='нет'}
-        }
-        
-    }
+    age>=60?sex==false?b='Да':age>=65?b='Да':b='Нет':b='Нет';
+    sex==true?sex='мужской':sex='женский';
+    
     alert('Вас зовут ' + fio + '\n'+ 'Ваш возраст ' + age + 'лет.'+'\n'+'Через 5 лет вам будет ' +  (age+5) + ' лет'+ '\n' + 'Вам ' + age*365 + " дней" +'\n' + "Ваш пол "+ sex + '\n'+'Вы на пенсии: '+b);
 </script>
+
 </body>
 </html>
