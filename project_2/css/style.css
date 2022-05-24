@@ -337,4 +337,109 @@ input {
   background: url(../image/love.png) 30px 10px no-repeat, url(../image/graf.png) 60px 10px no-repeat;
   float: right; }
 
+.block_end {
+  display: flex;
+  justify-content: space-between; }
+  .block_end ul {
+    display: flex;
+    justify-content: flex-start; }
+    .block_end ul ol {
+      width: 36px;
+      height: 36px; }
+    .block_end ul ol:nth-child(1) {
+      background: url(../image/strelka_left.png) center no-repeat; }
+    .block_end ul ol:nth-child(2) {
+      text-align: center;
+      border: 1px solid #333333;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 33px;
+      color: #333333; }
+    .block_end ul ol:nth-child(3) {
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 33px;
+      color: #747476; }
+    .block_end ul ol:nth-child(4) {
+      background: url(../image/strelka_right.png) center no-repeat; }
+  .block_end div {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    margin-top: 69px;
+    padding-right: 20px;
+    background: url(../image/strelka_bottom.png) right no-repeat; }
+
+.strong_4 .conteiner div:first-child {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  margin-left: 90px;
+  margin-top: 52px; }
+.strong_4 .conteiner ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px; }
+  .strong_4 .conteiner ul ol {
+    width: 213px;
+    height: 202px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 132%;
+    color: #333333; }
+  .strong_4 .conteiner ul ol:first-child {
+    width: 55px;
+    height: 55px;
+    border-radius: 27.5px;
+    margin-top: 50px;
+    opacity: 0.5;
+    background: url(../image/arrow_left.png) center no-repeat, #E1E0E0; }
+  .strong_4 .conteiner ul ol:first-child:hover {
+    opacity: 1; }
+  .strong_4 .conteiner ul ol:last-child {
+    width: 55px;
+    height: 55px;
+    border-radius: 27.5px;
+    margin-top: 50px;
+    opacity: 0.5;
+    background: url(../image/arrow_right.png) center no-repeat, #E1E0E0; }
+  .strong_4 .conteiner ul ol:last-child:hover {
+    opacity: 1; }
+
+.strong_email {
+  background: #F5F5F6;
+  margin-top: 60px; }
+  .strong_email .conteiner ul {
+    display: flex; }
+    .strong_email .conteiner ul ol:first-child {
+      width: 300px;
+      height: 50px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      margin-left: 90px;
+      margin-top: 35px; }
+    .strong_email .conteiner ul ol:last-child {
+      margin-left: 32px;
+      margin-top: 45px;
+      margin-bottom: 45px; }
+      .strong_email .conteiner ul ol:last-child input:first-child {
+        width: 236px;
+        height: 32px;
+        border: 1px solid #A1A1A1;
+        line-height: 50px;
+        border-radius: 5px;
+        color: #7E7E83; }
+      .strong_email .conteiner ul ol:last-child input:last-child {
+        width: 128px;
+        height: 32px;
+        background: #E91F39;
+        border-radius: 5px;
+        color: #FFFFFF; }
+
 /*# sourceMappingURL=style.css.map */
