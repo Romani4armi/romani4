@@ -7,6 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+    <input type="button" value="1" onclick="getNumber(1)">
+    <input type="button" value="2" onclick="getNumber(2)">
+    <input type="button" value="3" onclick="getNumber(3)">
+    <input type="button" value="4" onclick="getNumber(4)">
+    <input type="button" value="5" onclick="getNumber(5)">
+    <input type="button" value="6" onclick="getNumber(6)">
+    <input type="button" value="7" onclick="getNumber(7)">
+    <input type="button" value="8" onclick="getNumber(8)">
+    <input type="button" value="9" onclick="getNumber(9)">
+    <input type="button" value="0" onclick="getNumber(0)">
+    <input type="button" value="+" onclick="getNumber('+')">
+    <input type="button" value="-" onclick="getNumber('-')">
+    <input type="button" value="*" onclick="getNumber('*')">
+    <input type="button" value="/" onclick="getNumber('/')">
+    <input type="button" value="=" onclick="getNumber('=')">
+    <script>
+        var a;
+        var x=null;
+        var y=null;
+        function getNumber(a){
+            var znach;
+            if (x==null) {
+                    x=a;  console.log("x"+x);
+                } else {
+                    if (y==null){
+                     y=a; console.log("y"+y);}
+               } 
+             
+           
+                switch(a){
+                    case "+":znach=x+y; console.log(znach); break;
+                    case "-":znach=x-y; console.log(znach);  break;
+                    case "*":znach=x*y;console.log(znach);  break;
+                    case "/":znach=x/y;console.log(znach);  break;
+                    
+                }
+           
+            
+          
+           
+        }
+    </script>
+
 </html>
