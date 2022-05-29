@@ -88,7 +88,7 @@ header {
       flex-grow: 5; }
       header div ul ol:nth-child(3) div.poisk_1 {
         max-width: 437px;
-        min-width: 150px;
+        min-width: 200px;
         height: 32px;
         border: 1px solid #D8D9DB;
         border-radius: 5px;
@@ -276,7 +276,7 @@ input {
   .blocks ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .blocks ul ol {
       margin-top: 55px;
       width: 232px;
@@ -383,6 +383,7 @@ input {
 .strong_4 .conteiner ul {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 50px; }
   .strong_4 .conteiner ul ol {
     width: 213px;
@@ -441,5 +442,176 @@ input {
         background: #E91F39;
         border-radius: 5px;
         color: #FFFFFF; }
+
+footer {
+  background: #333333; }
+  footer div.conteiner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-top: 45px;
+    padding-bottom: 52px; }
+    footer div.conteiner ul {
+      width: 140px; }
+      footer div.conteiner ul ol {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin-top: 10px; }
+      footer div.conteiner ul ol:first-child {
+        font-weight: 500;
+        margin-bottom: 28px; }
+    footer div.conteiner ul:nth-child(2) {
+      width: 118px; }
+      footer div.conteiner ul:nth-child(2) ol:nth-child(2) {
+        display: flex; }
+        footer div.conteiner ul:nth-child(2) ol:nth-child(2) div {
+          width: 20px;
+          height: 20px;
+          border: 0.9px solid #FFFFFF;
+          border-radius: 10px;
+          margin-right: 8px;
+          margin-bottom: 22px; }
+        footer div.conteiner ul:nth-child(2) ol:nth-child(2) div:nth-child(1) {
+          background: url("../image/vk.png") center no-repeat; }
+        footer div.conteiner ul:nth-child(2) ol:nth-child(2) div:nth-child(2) {
+          background: url("../image/facebook.png") center no-repeat; }
+        footer div.conteiner ul:nth-child(2) ol:nth-child(2) div:nth-child(3) {
+          background: url("../image/insta.png") center no-repeat; }
+        footer div.conteiner ul:nth-child(2) ol:nth-child(2) div:nth-child(4) {
+          background: url("../image/tvitter.png") center no-repeat; }
+      footer div.conteiner ul:nth-child(2) ol:nth-child(3) {
+        margin-bottom: 28px; }
+    footer div.conteiner ul:nth-child(3) {
+      width: 175px; }
+      footer div.conteiner ul:nth-child(3) ol:nth-child(2) {
+        margin-bottom: 27px; }
+        footer div.conteiner ul:nth-child(3) ol:nth-child(2) img {
+          vertical-align: middle;
+          margin-right: 9px; }
+      footer div.conteiner ul:nth-child(3) ol:nth-child(3) {
+        width: 175px; }
+    footer div.conteiner ul:nth-child(4) {
+      width: 260px; }
+      footer div.conteiner ul:nth-child(4) ol:nth-child(2) {
+        margin-bottom: 24px; }
+        footer div.conteiner ul:nth-child(4) ol:nth-child(2) img {
+          margin-right: 24px; }
+      footer div.conteiner ul:nth-child(4) ol:nth-child(3) {
+        width: 142px; }
+
+.blocks ul ol div .span2 {
+  text-decoration: line-through; }
+
+@media all and (max-width: 1028px) {
+  .strong_4 .conteiner ul ol {
+    margin-right: 64px; }
+
+  .strong_4 .conteiner ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch; }
+
+  .strong_4 .conteiner ul ol:nth-child(2) {
+    margin-right: 100px; } }
+@media all and (max-width: 960px) {
+  header div ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  header div ul ol:nth-child(2) {
+    margin-right: 300px; }
+
+  header div ul ol:nth-child(3) {
+    min-width: 250px; } }
+@media all and (max-width: 885px) {
+  header div ul ol:nth-child(2) {
+    margin-right: 150px; }
+
+  header div ul ol:nth-child(3) {
+    min-width: 300px; }
+
+  .strong_email .conteiner ul {
+    flex-direction: column; }
+
+  .strong_email .conteiner ul ol:last-child {
+    margin-left: 90px; }
+
+  ul.conteiner {
+    flex-wrap: wrap; }
+    ul.conteiner ol {
+      margin: 10px; } }
+@media all and (max-width: 785px) {
+  header div ul ol:nth-child(2) {
+    margin-right: 100px; }
+
+  footer div.conteiner {
+    flex-wrap: wrap; }
+
+  footer div.conteiner ul:nth-child(4) {
+    margin-top: 35px; } }
+@media all and (max-width: 733px) {
+  header div ul ol:nth-child(3) {
+    min-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  .block_1 div {
+    flex-direction: column; }
+
+  .block_1 {
+    height: auto;
+    padding-bottom: 10px; } }
+@media all and (max-width: 600px) {
+  .flex_1 {
+    flex-direction: column; }
+
+  .body_1 div.conteiner div.conteiner_1 {
+    width: 100%; }
+
+  .strong_4 .conteiner ul ol {
+    display: none; }
+
+  .blocks {
+    margin: 0; } }
+@media all and (max-width: 430px) {
+  header div ul ol:nth-child(2) {
+    margin-right: 0px; }
+
+  .strong_email .conteiner ul ol:first-child {
+    margin-left: 20px; }
+
+  .strong_email .conteiner ul ol:last-child {
+    margin-left: 20px; }
+
+  .block_1 div {
+    flex-direction: row; }
+
+  .block_1 div ul {
+    flex-direction: column; }
+    .block_1 div ul ol {
+      margin: 5px; }
+
+  footer div.conteiner {
+    padding-left: 20px; }
+
+  .strong_email .conteiner ul ol:first-child {
+    font-size: 16px; }
+
+  .conteiner {
+    padding: 0; }
+
+  .strong_4 .conteiner div:first-child {
+    margin-left: 20px; }
+
+  .body_1 div.conteiner div.conteiner_1 {
+    width: 320px; } }
+@media all and (max-width: 345px) {
+  .body_1 div.conteiner div.conteiner_1 ul ol input {
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
