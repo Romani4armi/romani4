@@ -1,0 +1,417 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "keyframes.scss";
+
+// font-family: 'Fira Sans', sans-serif;
+// font-family: 'Lobster', cursive;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Pacifico', cursive;
+// font-family: 'Roboto', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+
+.conteiner{
+    max-width: 1336px;
+    margin: 0 auto;
+}
+body div.body{
+    background-color: $red ;
+}
+li:hover{
+     @include scale_up_center2;
+}
+h1{
+    background-color: $whiteStart;
+    height: 196px;
+    div.conteiner{ 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 42px;
+        padding:37px 68px;
+        div:hover{
+            @include scale_up_center2;
+       }
+        div:last-child{
+            @include firaRegular;
+            font-size: 32px;
+            width: 560px;            
+        }
+        div:first-child{
+            @include robotoMedium;
+            font-size: 52px;
+            width: 245px;      
+        }
+    }
+}
+header{
+    div.conteiner{
+        background-color: $whiteStart;
+        margin-top: 70px;
+        border-top: 8px solid #000000;
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-top: 20px;
+        div:hover{
+            @include scale_up_center2;
+       }
+        div{
+            @include robotoMedium;
+            font-size: 22px;
+            width: 105px;
+            min-width: 105px;
+            height: 55px;
+            margin-left: 36px;
+            margin-bottom: 50px;
+        }
+    
+        ul:first-of-type{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 690px;
+            margin-left: 10px;
+            margin-right: 40px;
+            li{
+                @include  firaRegular;
+                font-size: 18px;
+            }
+        }
+        ul:last-of-type{
+            display: flex;
+            margin-top: 10px;
+            min-width: 24px;
+            li{
+                width:60px ;
+                height: 34px;
+                background-color: #fff;
+            }
+            li:nth-child(1){
+                background: url(../image/svg/poisk.svg) center center no-repeat;
+               
+            }
+            li:hover{
+                @include scale_up_center2;
+            }
+            li:nth-child(2){
+                background: url(../image/svg/basket.svg) center center no-repeat;
+            }
+            li:nth-child(3){
+                background: url(../image/svg/heart.svg) center center no-repeat;
+            }
+            li:nth-child(4){
+                background: url(../image/svg/home.svg) center center no-repeat;
+                margin-right: 15px;
+            }
+        }
+        
+    }
+}
+div.cards_sneaker{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        background-color: $whiteStart;
+       
+        li{
+            width: 416px;
+            height: 416px;
+            background:  url(../image/sneaker/sneaker_1.png)center no-repeat,$sneakerWite  ;
+            margin: 5px;
+            margin-bottom: 44px;
+        }
+        li:last-of-type{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: space-between;
+            background: $whiteStart;
+            div{
+                background: url(../image/sneaker/sneaker_3.png) center no-repeat,$sneakerWite;
+                background-size: contain;
+                width: 204px;
+                height: 204px;
+            }
+        }
+    }
+}
+ 
+.sale{
+    .conteiner{
+        display: flex;
+        height:  407px;
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        ul:nth-child(2){
+            width: 440px;
+            text-align: right;
+            margin-right: 90px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-end;
+            li{
+                @include scale_up_center;
+            }
+            li:hover{
+                @include scale_up_center2;
+            }
+            li:nth-child(1){
+                @include firaRegular;
+                color: $whiteStart;
+                margin-top: 70px;
+               
+            }
+            li:nth-child(2){
+                @include firaSemiBold22;
+                font-size: 28px;
+                text-transform: uppercase;
+                color: $whiteStart;
+                margin-top: 36px;
+            }
+            li:nth-child(3){
+                @include firaSemiBold22;
+                font-size: 72px;
+                text-transform: uppercase;
+                color: $whiteStart;
+                margin-top: 1px;
+            }
+            li:nth-child(4){
+                @include firaMedium18;
+                width: 227px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                margin-top:  28px;
+                margin-right: 0px;
+                background-color: $whiteStart;
+                text-transform: uppercase; 
+            }
+           
+        }
+        ul:nth-child(1){
+            display: flex;
+            width: 100%;
+            margin-top: 65px;
+            margin-left: 30px;
+            li{
+                width: 139px;
+                height: 200px;
+                @include scale_up_center;
+            }
+            li:hover{
+                @include scale_up_center2;
+            }
+            li:nth-child(1){
+                background: url(../image/sale/S.svg) center no-repeat;
+                position: relative;
+                left:70px;
+                top:70px;
+            }
+            li:nth-child(2){
+                background: url(../image/sale/percent.svg) center no-repeat;
+                width: 65px;
+                height: 65px;
+                position: relative;
+                left:42px;
+                top:100px;
+            }
+            li:nth-child(3){
+                background: url(../image/sale/A.svg) center no-repeat;
+                position: relative;
+                left:36px;
+                top:7px;
+            }
+            li:nth-child(4){
+                background: url(../image/sale/percent.svg) center no-repeat;
+                width: 65px;
+                height: 65px;
+                position: relative;
+                left:10px;
+                top:180px;
+            }
+            li:nth-child(5){
+                background: url(../image/sale/L.svg) center no-repeat;
+                position: relative;
+                left:-10px;
+                top:90px;
+            }
+            li:nth-child(6){
+                background: url(../image/sale/E.svg) center no-repeat;
+                position: relative;
+                left:-44px;
+                top:38px;
+            }
+            li:nth-child(7){
+                background: url(../image/sale/percent.svg) center no-repeat;
+                width: 65px;
+                height: 65px;
+                position: relative;
+                left:10px;
+                top:10px;
+            }
+        }
+    }
+}
+.choice{
+    background: $whiteStart;
+    .conteiner{
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        
+        div.choice_both {
+            display: flex;
+            justify-content: space-around;
+           div:hover{
+                @include scale_up_center2;
+           }
+            div{
+                line-height: 50px;
+                text-align: center;
+                width: 244px;
+                height: 48px;
+                background-color:$black ;
+                @include firaMedium18;
+                color: $whiteStart;
+                margin-top: 45px;
+                margin-bottom: 32px;
+               
+            }
+        }
+        .choice_sneaker{
+            background: url(../image/sneakers.png) center no-repeat;
+            background-size: cover;
+            padding-top: 1px;
+            padding-bottom: 46px;
+            margin-left: -1px;
+            div:hover{
+                @include scale_up_center2;
+           }
+            div:first-child{
+                @include firaSemiBold22;
+                font-size: 40px;
+                color: $whiteStart;
+                width: 550px;
+                height: 100px;
+                margin: 0 auto;
+                margin-top: 156px;
+                text-align: center;
+               
+            }
+            div:last-child{
+                width: 325px;
+                height: 65px;
+                background-color: $whiteStart;
+                @include firaMedium18;
+                font-size: 20px;
+                line-height: 75px;
+                text-align: center;
+                margin: auto;
+                margin-top: 45px;
+            }
+        }
+    }
+}
+footer{
+    background-color: $black;
+    .conteiner{
+        padding-top: 1px;
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        border-bottom:8px solid #000000;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        div.sneaker_1:hover{
+            @include scale_up_center2;
+       }
+        div.sneaker_1{
+            @include  robotoMedium;
+            font-size: 22px;
+            color: $whiteStart;
+            width: 105px;
+            height: 55px;
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+        div.sneaker_2{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 80px;
+            ul{
+               padding: 0;
+                    
+                li{
+                    @include robotoLight18;
+                    color: $whiteStart;
+                    margin-top: 16px;
+                }
+                li:first-of-type{
+                    @include robotoMedium;
+                    font-size: 16px;
+                    color: $whiteStart;
+                    margin-top: 60px;
+                    margin-bottom: 34px;
+                    
+                }
+            }
+            ul:last-of-type{
+                li:nth-child(1){
+                    font-size: 14px;
+                    text-align: center;
+                }
+                li:nth-child(2){
+                    width: 292px;
+                    height: 32px;
+                    font-size: 16px;
+                    background-color: #E8E8E8;
+                    color: $black;
+                    text-align: center;
+                    line-height: 35px;
+                    font-weight: 400;
+                    margin-top: 20px;
+                }
+                li:nth-child(3){
+                    display: flex;
+                    justify-content: space-between;
+                    div{
+                        width: 27px;
+                        height: 27px;
+                        margin-top: 66px;
+                       
+                    }
+                    div:hover{
+                        @include rotate_center;
+                    }
+                    div:nth-child(1){
+                        background: url(../image/svg/facebook.svg) center no-repeat;
+                    }
+                    div:nth-child(2){
+                        background: url(../image/svg/instagram.svg)center no-repeat;
+                    }
+                    div:nth-child(3){
+                        background: url(../image/svg/tvitter.svg)center no-repeat;
+                    }
+                    div:nth-child(4){
+                        background: url(../image/svg/tvitter.svg)center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

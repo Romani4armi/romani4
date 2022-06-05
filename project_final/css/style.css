@@ -1,0 +1,434 @@
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes scale-up-center2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes scale-up-center2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style-type: none; }
+
+.conteiner {
+  max-width: 1336px;
+  margin: 0 auto; }
+
+body div.body {
+  background-color: #EE0004; }
+
+li:hover {
+  -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+  animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+
+h1 {
+  background-color: #ffffff;
+  height: 196px; }
+  h1 div.conteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 42px;
+    padding: 37px 68px; }
+    h1 div.conteiner div:hover {
+      -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    h1 div.conteiner div:last-child {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      font-size: 32px;
+      width: 560px; }
+    h1 div.conteiner div:first-child {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      font-size: 52px;
+      width: 245px; }
+
+header div.conteiner {
+  background-color: #ffffff;
+  margin-top: 70px;
+  border-top: 8px solid #000000;
+  border-left: 8px solid #000000;
+  border-right: 8px solid #000000;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 20px; }
+  header div.conteiner div:hover {
+    -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+    animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+  header div.conteiner div {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 22px;
+    width: 105px;
+    min-width: 105px;
+    height: 55px;
+    margin-left: 36px;
+    margin-bottom: 50px; }
+  header div.conteiner ul:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 690px;
+    margin-left: 10px;
+    margin-right: 40px; }
+    header div.conteiner ul:first-of-type li {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      font-size: 18px; }
+  header div.conteiner ul:last-of-type {
+    display: flex;
+    margin-top: 10px;
+    min-width: 24px; }
+    header div.conteiner ul:last-of-type li {
+      width: 60px;
+      height: 34px;
+      background-color: #fff; }
+    header div.conteiner ul:last-of-type li:nth-child(1) {
+      background: url(../image/svg/poisk.svg) center center no-repeat; }
+    header div.conteiner ul:last-of-type li:hover {
+      -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    header div.conteiner ul:last-of-type li:nth-child(2) {
+      background: url(../image/svg/basket.svg) center center no-repeat; }
+    header div.conteiner ul:last-of-type li:nth-child(3) {
+      background: url(../image/svg/heart.svg) center center no-repeat; }
+    header div.conteiner ul:last-of-type li:nth-child(4) {
+      background: url(../image/svg/home.svg) center center no-repeat;
+      margin-right: 15px; }
+
+div.cards_sneaker ul {
+  display: flex;
+  justify-content: space-around;
+  border-left: 8px solid #000000;
+  border-right: 8px solid #000000;
+  background-color: #ffffff; }
+  div.cards_sneaker ul li {
+    width: 416px;
+    height: 416px;
+    background: url(../image/sneaker/sneaker_1.png) center no-repeat, #f3f3f3;
+    margin: 5px;
+    margin-bottom: 44px; }
+  div.cards_sneaker ul li:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    background: #ffffff; }
+    div.cards_sneaker ul li:last-of-type div {
+      background: url(../image/sneaker/sneaker_3.png) center no-repeat, #f3f3f3;
+      background-size: contain;
+      width: 204px;
+      height: 204px; }
+
+.sale .conteiner {
+  display: flex;
+  height: 407px;
+  border-left: 8px solid #000000;
+  border-right: 8px solid #000000; }
+  .sale .conteiner ul:nth-child(2) {
+    width: 440px;
+    text-align: right;
+    margin-right: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-end; }
+    .sale .conteiner ul:nth-child(2) li {
+      -webkit-animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    .sale .conteiner ul:nth-child(2) li:hover {
+      -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    .sale .conteiner ul:nth-child(2) li:nth-child(1) {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      margin-top: 70px; }
+    .sale .conteiner ul:nth-child(2) li:nth-child(2) {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 0.02em;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 36px; }
+    .sale .conteiner ul:nth-child(2) li:nth-child(3) {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 0.02em;
+      font-size: 72px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 1px; }
+    .sale .conteiner ul:nth-child(2) li:nth-child(4) {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      width: 227px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      margin-top: 28px;
+      margin-right: 0px;
+      background-color: #ffffff;
+      text-transform: uppercase; }
+  .sale .conteiner ul:nth-child(1) {
+    display: flex;
+    width: 100%;
+    margin-top: 65px;
+    margin-left: 30px; }
+    .sale .conteiner ul:nth-child(1) li {
+      width: 139px;
+      height: 200px;
+      -webkit-animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    .sale .conteiner ul:nth-child(1) li:hover {
+      -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(1) {
+      background: url(../image/sale/S.svg) center no-repeat;
+      position: relative;
+      left: 70px;
+      top: 70px; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(2) {
+      background: url(../image/sale/percent.svg) center no-repeat;
+      width: 65px;
+      height: 65px;
+      position: relative;
+      left: 42px;
+      top: 100px; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(3) {
+      background: url(../image/sale/A.svg) center no-repeat;
+      position: relative;
+      left: 36px;
+      top: 7px; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(4) {
+      background: url(../image/sale/percent.svg) center no-repeat;
+      width: 65px;
+      height: 65px;
+      position: relative;
+      left: 10px;
+      top: 180px; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(5) {
+      background: url(../image/sale/L.svg) center no-repeat;
+      position: relative;
+      left: -10px;
+      top: 90px; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(6) {
+      background: url(../image/sale/E.svg) center no-repeat;
+      position: relative;
+      left: -44px;
+      top: 38px; }
+    .sale .conteiner ul:nth-child(1) li:nth-child(7) {
+      background: url(../image/sale/percent.svg) center no-repeat;
+      width: 65px;
+      height: 65px;
+      position: relative;
+      left: 10px;
+      top: 10px; }
+
+.choice {
+  background: #ffffff; }
+  .choice .conteiner {
+    border-left: 8px solid #000000;
+    border-right: 8px solid #000000; }
+    .choice .conteiner div.choice_both {
+      display: flex;
+      justify-content: space-around; }
+      .choice .conteiner div.choice_both div:hover {
+        -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+        animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+      .choice .conteiner div.choice_both div {
+        line-height: 50px;
+        text-align: center;
+        width: 244px;
+        height: 48px;
+        background-color: #181818;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 45px;
+        margin-bottom: 32px; }
+    .choice .conteiner .choice_sneaker {
+      background: url(../image/sneakers.png) center no-repeat;
+      background-size: cover;
+      padding-top: 1px;
+      padding-bottom: 46px;
+      margin-left: -1px; }
+      .choice .conteiner .choice_sneaker div:hover {
+        -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+        animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+      .choice .conteiner .choice_sneaker div:first-child {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        font-size: 40px;
+        color: #ffffff;
+        width: 550px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 156px;
+        text-align: center; }
+      .choice .conteiner .choice_sneaker div:last-child {
+        width: 325px;
+        height: 65px;
+        background-color: #ffffff;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 75px;
+        text-align: center;
+        margin: auto;
+        margin-top: 45px; }
+
+footer {
+  background-color: #181818; }
+  footer .conteiner {
+    padding-top: 1px;
+    border-left: 8px solid #000000;
+    border-right: 8px solid #000000;
+    border-bottom: 8px solid #000000;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; }
+    footer .conteiner div.sneaker_1:hover {
+      -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
+      animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
+    footer .conteiner div.sneaker_1 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      font-size: 22px;
+      color: #ffffff;
+      width: 105px;
+      height: 55px;
+      margin-left: 80px;
+      margin-top: 40px; }
+    footer .conteiner div.sneaker_2 {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-bottom: 80px; }
+      footer .conteiner div.sneaker_2 ul {
+        padding: 0; }
+        footer .conteiner div.sneaker_2 ul li {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          letter-spacing: 0.02em;
+          color: #ffffff;
+          margin-top: 16px; }
+        footer .conteiner div.sneaker_2 ul li:first-of-type {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+          font-size: 16px;
+          color: #ffffff;
+          margin-top: 60px;
+          margin-bottom: 34px; }
+      footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(1) {
+        font-size: 14px;
+        text-align: center; }
+      footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(2) {
+        width: 292px;
+        height: 32px;
+        font-size: 16px;
+        background-color: #E8E8E8;
+        color: #181818;
+        text-align: center;
+        line-height: 35px;
+        font-weight: 400;
+        margin-top: 20px; }
+      footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) {
+        display: flex;
+        justify-content: space-between; }
+        footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) div {
+          width: 27px;
+          height: 27px;
+          margin-top: 66px; }
+        footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) div:hover {
+          -webkit-animation: rotate-center 1.5s ease-in-out 1 both;
+          animation: rotate-center 1.5s ease-in-out 1 both; }
+        footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) div:nth-child(1) {
+          background: url(../image/svg/facebook.svg) center no-repeat; }
+        footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) div:nth-child(2) {
+          background: url(../image/svg/instagram.svg) center no-repeat; }
+        footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) div:nth-child(3) {
+          background: url(../image/svg/tvitter.svg) center no-repeat; }
+        footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) div:nth-child(4) {
+          background: url(../image/svg/tvitter.svg) center no-repeat; }
+
+/*# sourceMappingURL=style.css.map */

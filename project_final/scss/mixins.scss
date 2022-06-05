@@ -1,0 +1,66 @@
+@mixin firaBold28 {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+}
+@mixin firaSemiBold22{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+}
+@mixin firaRegular {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+   
+}
+@mixin firaMedium18 {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+@mixin firalight16 {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+@mixin robotoMedium {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;    
+}
+@mixin robotoLight18 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+@mixin slide_fwd_center {
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} 
+@mixin scale_up_center {
+    -webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1 both;
+	            animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1 both;
+}
+@mixin rotate_center {
+
+    -webkit-animation: rotate-center 1.5s ease-in-out 1 both;
+    animation: rotate-center 1.5s ease-in-out 1 both;
+}
+@mixin scale_up_center2 {
+    -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1 both;
+	            animation: scale-up-center2 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1 both;
+}
