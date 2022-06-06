@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/nouislider.min.css">
+    <title>Sneakers catalog</title>
+</head>
+<body>
+<div class="body_catalog">  
+    <header>
+        <div class="conteiner">
+            <div><a href="index.html">SNEAKER  SPACE.</a></div>
+            <ul>
+                <li><a href="">Все товары</a></li>
+                <li><a href="">Женские</a></li>
+                <li><a href="">Мужские</a></li>
+                <li><a href="">Скидки</a></li>
+                <li><a href="">Бренды</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul>
+                <a href=""><li> </li></a>
+                <a href=""><li> </li></a>
+                <a href=""><li> </li></a>
+                <a href=""><li> </li></a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="path">
+        <ul class="conteiner">
+            <li>Главная</li>
+        </ul>
+    </div>
+
+    <div class="list_woomen">
+        <div class="conteiner">
+            <div>Женские кроссовки</div>
+            <div>306 товаров</div>
+        </div>
+    </div>
+
+    <div class="content_body">
+        <div class="conteiner">
+            <form action="https://fe.it-academy.by/TestForm.php" method="post">
+                <ul class="filter_woomen">
+                    <li class="li_title">обувь</li>
+                    <li><a href="">Кроссовки</a></li>
+                    <li><a href="">Зимние кроссовки</a></li>
+                    <li><a href="">Ботинки </a></li>
+                    <li><a href="">Босоножки</a></li>
+                    <li><a href="">Шлепанцы и сланцы</a></li>
+                    <li class="li_title">аКСЕССУАРЫ</li>
+                    <li class="li_title">кОЛЛЕКЦИИ</li>
+                    <li class="li_title">фИЛЬТРЫ</li>
+                    <li class="li_title">бренд</li>
+                    <li><input type="checkbox" name="Nike"> Nike</li>
+                    <li><input type="checkbox" name="Adidas"> Adidas</li>
+                    <li><input type="checkbox" name="Puma"> Puma</li>
+                    <li><input type="checkbox" name="Reebok"> Reebok</li>
+                    <li><input type="checkbox" name="Converse"> Converse</li>
+                    <li><input type="checkbox" name="Dr_Martens"> Dr. Martens</li>
+                    <li><input type="checkbox" name="New_Balance"> New Balance</li>
+                    <li><input type="checkbox" name="Fila"> Fila</li>
+                    <li class="li_title">цена</li>
+                    <li class="slider_output" id="slider_output"> </li>
+                    <li class="min_max"> <div>Min</div>      <div>Max</div></li>
+                    <li class="li_price">
+                        <label class="slider_price">
+                            <span>от <br></span>
+                            <input type="number" min="50" max="9999" placeholder="100" class="slider_filter" id="i-0" name="">
+                        </label>
+                        <label class="slider_price">
+                            <span>до <br></span>
+                            <input type="number" min="50" max="9999"  placeholder="800" class="slider_filter" id="i-1" name="">
+                        </label>
+                        </li>
+                   
+                    <li class="li_title">размер</li>
+                    <li></li>
+                </ul>
+            </form>
+            <div class="icon_sneaker">
+                <div>сортировать по</div>
+                <ul>
+                    <li><a href="">Умолчанию</a></li>
+                    <li><a href="">Цена: по возрастанию</a></li>
+                    <li><a href="">Цена: по убыванию</a></li>
+                    <li><a href="">Цена: по убыванию</a></li>
+                    <li><a href="">Цена: по убыванию</a></li>
+                </ul>
+                <ul class="card_cneakers">
+                    <li> 
+                        <div>
+
+                        </div>  
+                        <p>
+                           <span> Nike </span> / Кроссовки WMNS NIKE SUPERREP GROOVE
+                        </p> 
+                        <div> 274 р.</div>                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="conteiner">
+            <div class="sneaker_1"><a href="index.html">SNEAKER SPACE.</a></div>
+            <div class="sneaker_2">
+                <ul>
+                    <li><a href="">ПОЛЕЗНО</a></li>
+                    <li><a href="">Возврат товара</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">FAQ по уходу за обувью</a></li>
+                    <li><a href="">Подарочные карты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">О НАС</a></li>
+                    <li><a href="">Компания</a></li>
+                    <li><a href="">Партнеры</a></li>
+                    <li><a href="">Рассылка новостей</a></li>
+                    <li><a href="">Вакансии</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">СВЯЗАТЬСЯ С НАМИ</a></li>
+                    <li><a href="">+375 29 123 45 67</a></li>
+                    <li><a href="">+375 29 123 45 67</a></li>
+                    <li><a href="">sneakerspace@gmail.com</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Подпишись на рассылку и 
+                        <br>получи скидку 10% на первый заказ</a></li>
+                    <li><a href="">ПОДПИСАТЬСЯ</a></li>
+                    <li>
+                        <a href=""><div></div></a>
+                        <a href=""><div></div></a>
+                        <a href=""><div></div></a>
+                        <a href=""><div></div></a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </footer>
+</div> 
+<script src="js/nouislider.min.js"></script>
+<script src="js/polzunok.js"></script>
+<script src="js/icon.js"></script>
+</body>
+</html>
