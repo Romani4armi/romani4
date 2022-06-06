@@ -10,7 +10,7 @@ var sneakersArr=[
     },
     ]
 
-var ul=document.querySelector(".card_cneakers");
+//var ul=document.querySelector(".card_cneakers");
 var html = '';
 
 for(var i=0; i<sneakersArr.length; i++){
