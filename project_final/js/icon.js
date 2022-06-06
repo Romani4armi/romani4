@@ -10,19 +10,14 @@ var sneakersArr=[
     },
     ]
 
-var ul=document.querySelector(".blocks ul");
+var ul=document.querySelector(".card_cneakers");
 var html = '';
 
-for(var i=0; i<fotoArr.length; i++){
+for(var i=0; i<sneakersArr.length; i++){
     html+=`
-    <ol>
-    <img src="${fotoArr[i].imageTitle} " width="230px" height="164px" alt="">
-    <p>${fotoArr[i].title}</p>
-    <div> <span>${fotoArr[i].rating}</span> <span>${fotoArr[i].review} отзывов</span></div>
-    <div> <span class="span1">${fotoArr[i].price_1}.</span><span class="span2">${fotoArr[i].price_2}.</span></div>
-    <div class="buttom_old"></div>
-    <div class="button_5"> <img src="image/busket_wise.png" alt=""> В корзину</div>                                
-    </ol>`
+    
+    `
+    
 }
 console.log(html)
 ul.innerHTML = html;
