@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <div class="body_catalog">  
+        <header>
+            <div class="conteiner">
+                <div><a href="index.html">SNEAKER  SPACE.</a></div>
+                <ul>
+                    <li><a href="index_catalog.html">Все товары</a></li>
+                    <li><a href="">Женские</a></li>
+                    <li><a href="">Мужские</a></li>
+                    <li><a href="">Скидки</a></li>
+                    <li><a href="">Бренды</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <ul>
+                    <a href=""><li> </li></a>
+                    <a href=""><li> </li></a>
+                    <a href=""><li> </li></a>
+                    <a href=""><li> </li></a>
+                </ul>
+            </div>
+        </header>
+        <div class="path">
+            <ul class="conteiner">
+                <li>Главная</li>
+            </ul>
+        </div>
+        <div class="basket_basket"> 
+            <div class="conteiner">
+                <div> Корзина (1)</div>
+                 
+            </div>
+               
+        </div>
+    </div>
+
+    <div class="body_basket">
+        <div class="conteiner">
+            
+                <div class="produkt_basket">
+                    <div class="card_basket">
+                        <div></div>
+                        <ul>
+                            <li>Кроссовки Nike W AIR MAX 270</li>
+                            <li>Цвет: розовый</li>
+                            <li>Размер: 38 RUS</li>
+                            <li>Арт.: 371125</li>
+                            <li>458 р.</li>
+                            <li>
+                                <div>>ИЗМЕНИТЬ</div>
+                                <div>УДАЛИТЬ ТОВАР</div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <ul>
+                        <li>СПОСОБ ДОСТАВКИ</li>
+                        <li>
+                            <div>Ваш населенный пункт:</div>
+                            <div>
+                                <select name="city" >
+                                    <option value="zp1"> Минск </option>
+                                    <option value="zp2"> Витебск </option>
+                                    <option value="zp3"> Гродно </option>
+                                    <option value="zp4"> Гомель </option>
+                                    <option value="zp5"> Магилев</option>
+                                    <option value="zp6"> Брест </option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="courier_li_1">
+                             <input type="radio" value="1" name="courier_1">
+                             Курьер (без примерки)
+                            <span>Бесплатно</span>                         
+                        
+                        </li>
+                        <li class="courier_li_2">Ориентировочная дата доставки: 12 января</li>
+                        <li class="courier_li_3">Услуги примерки и отказа не предосталяются</li>
+                        <li class="courier_li_1">
+                            <input type="radio" value="2" name="courier_1">
+                            Курьер (c примеркой)
+                            <span>5 р</span>
+                        </li>
+
+                        <li class="courier_li_2">Ориентировочная дата доставки: 12 января</li>
+                        <li class="courier_li_3">Возможны примерка и отказ</li>
+                        <li class="courier_li_1"> 
+                            <input type="radio" value="3" name="courier_1">
+                            БелПочта 
+                            <span>Бесплатно</span>  
+                        </li>
+                        <li class="courier_li_2">Ориентировочная дата доставки: 14-16 января</li>
+                        <li  class="courier_li_3">Данный способ доступен для предоплаченных товаров. 
+                            Услуги примерки и отказа не предосталяются </li>
+                            <hr>
+                        <li>АДРЕС ДОСТАВКИ</li>
+                        <li>
+                            <form name='address' action='http://fe.it-academy.by/TestForm.php' novalidate>
+                               <input type="text" placeholder="Улица*" class="addres_street">
+                               <input type="text" placeholder="Дом*" class="addres_home"> <br>
+                               <input type="text" placeholder="Кв*" class="addres_ap">
+                               <input type="text" placeholder="Индекс*" class="addres_index">
+                            </form>
+                        </li>
+                        <hr>
+                        <li>КОНТАКТНАЯ ИНФОРМАЦИЯ</li>
+                        <li>
+                            <form name='kontakt_name' action='http://fe.it-academy.by/TestForm.php' novalidate>
+                                <input type="text" placeholder="Имя*" class="kontakt_name">
+                                <input type="text" placeholder="Фамилия*" class="kontakt_surname"><br>
+                                <input type="tel" placeholder="Телефон*" class="kontakt_tel"> <br>
+                                <input type="email" placeholder="E-mail*" class="kontakt_index"> 
+                             </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="basket_right">
+                    <div>
+                        <ul>
+                            <li>
+                                <div>Ваш заказ</div>
+                                
+                            </li><hr>
+                            <li>
+                                <div>Сумма: </div>
+                                <div>458 р</div>
+                            </li>
+                            <li>
+                                <div>Скидка: </div>
+                                <div>0 р</div>
+                            </li>
+                            <li>
+                                <div>Доставка: </div>
+                                <div>0 р</div>
+                                
+                            </li><hr>
+                            <li>
+                                <div>Итого:</div>
+                                <div>458 р</div>
+                            </li>
+                        </ul>
+                        <input class="basket basket_1" type="button" name="basket" value="ОФОРМИТЬ ЗАКАЗ"> <br>
+                        <input type="text" name="promocod" class=" promocod" placeholder="Введите промокод">
+                        <input type="button" name="promocod_button" class=" promocod_button" value="ПРИМЕНИТЬ">
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</body>

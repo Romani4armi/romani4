@@ -692,6 +692,9 @@ footer{
     .conteiner{
         border-left: 8px solid #000000;
         border-right: 8px solid #000000;
+        border-bottom:8px solid #000000; 
+        border-bottom-left-radius:50px ;
+        border-bottom-right-radius: 50px ;
         background-color: $whiteStart;
         display: flex;
         justify-content: space-between;
@@ -817,6 +820,67 @@ footer{
                 margin-top: 18px;
                 margin-right: 65px;
             }
+            >div:nth-child(11){
+                @include  firaRegular;
+                font-weight: 400;
+                font-size: 14px;                
+                margin-top: 18px;
+                margin-right: 65px;
+            }
+            >div:nth-child(12){
+                @include  firaRegular;
+                font-weight: 400;
+                font-size: 14px;                 
+                margin-top: 18px;
+                margin-right: 65px;
+            }
+            >div:nth-child(13){
+                @include  firaRegular;
+                font-weight: 400;
+                font-size: 14px;                  
+                margin-top: 18px;
+                margin-right: 65px;
+                text-decoration-line: underline;
+                margin-bottom: 42px;
+            }
+           >hr{
+               margin-right: 64px
+
+           }
+           >div:nth-child(15){
+               display: flex;
+               justify-content: space-between;
+               margin-top: 30px;
+               >div:first-child{
+                @include  firaRegular;
+                font-size: 24px;
+               }
+               >div{
+                @include  firaRegular;
+                font-size: 16px;
+                text-align: right;
+                margin-right: 65px;
+                
+               }
+           }
+           >div:nth-child(16){
+            @include  firaRegular;
+            font-weight: 400;
+            font-size: 14px;                  
+            margin-top: 18px;
+            margin-right: 65px;
+            text-decoration-line: underline;           
+            opacity: 0.6;
+            }
+            >div:nth-child(18){
+                @include  firaRegular;
+                font-weight: 400;
+                font-size: 14px;                  
+                margin-top: 18px;
+                margin-right: 65px;
+                text-decoration-line: underline;           
+               margin-bottom: 36px;
+                }
         }
     }
 }
@@ -837,6 +901,7 @@ ul.card_cneakers{
         width: 240px;
         height: 402px;
         margin-left: 16px;
+
         div.card_sneakers_background{
             width: 240px;
             height: 265px;
@@ -891,6 +956,7 @@ ul.card_cneakers{
                 background-size: 90%;
                 margin: 12px;
             }
+            
             
         }
         p{  
@@ -960,4 +1026,330 @@ ul.card_cneakers{
     border: 1px solid #949494;
     background: url(../image/svg/heart.svg) center no-repeat;
     background-size: 90%;
+}
+.reviews_sneaker{
+    >div:first-child{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 65px;
+        margin-top: 42px;
+        >div:last-child{
+            @include firaMedium18;
+            font-size: 16px;
+            text-align: right;
+            margin-top: 12px;
+
+        }
+    }
+    >div:last-child{
+        margin-right: 65px;
+    }
+}
+.basket_basket{
+    background-color: #181818;
+    .conteiner{           
+        background-color: $whiteStart;
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        padding-top: 1px;
+        >div{
+            @include firaMedium18;
+            font-size: 28px;
+            text-transform: uppercase;
+            margin: 46px 0px 0 36px;
+        }
+        
+    }
+}
+.body_basket{
+    background-color: #181818;
+    .conteiner{
+        background-color: $whiteStart;
+        border-left: 8px solid #000000;
+        border-right: 8px solid #000000;
+        border-bottom:8px solid #000000; 
+        border-bottom-left-radius:50px ;
+        border-bottom-right-radius: 50px ;
+        background-color: $whiteStart;
+        padding-top: 1px;
+        display: flex;
+        justify-content: space-between;
+        .produkt_basket{
+            margin-left: 36px;
+           padding-right: 50px;
+            .card_basket{
+                display: flex;
+                margin-top: 48px;
+                >div{
+                    background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
+                    background-size: 100%;
+                    width: 306px;height: 306px;
+                }
+                >ul{ 
+                    margin-left: 24px;
+                    li{
+                        @include firaRegular;
+                        margin-top: 12px;
+                    }
+                    li:hover{
+                        @include scale_up_center_stop;
+                    }
+                    >li:nth-child(1){
+                        font-size: 26px;
+                    }
+                    >li:nth-child(2){
+                        font-size: 22px;
+                    }
+                    >li:nth-child(3){
+                        font-size: 22px;
+                    }
+                    >li:nth-child(4){
+                        font-size: 22px;
+                    }
+                    >li:nth-child(5){
+                        font-weight: 500;
+                        font-size: 32px;
+                        margin-top: 32px;
+                    }
+                    >li:nth-child(6){
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 36px;
+
+                        >div{
+                            @include firaRegular;
+                            font-size: 18px;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+            >ul{
+                li:hover{
+                    @include scale_up_center_stop;
+                }
+                >li{
+                    margin-left:80px;
+                }
+                >li:nth-child(1){
+                    @include firaMedium18;
+                    font-size: 24px;
+                    margin-top: 128px;
+                }
+                >li:nth-child(2){
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                    >div:first-child{
+                        @include scale_up_center_stop;
+                        font-size: 22px;
+                    }
+                    >div:last-child{
+                        >select{
+                            @include firaRegular;
+                            width: 276px;
+                            height: 40px;
+                            font-size: 20px;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+                .courier_li_1{
+                    @include firaRegular;
+                    font-size: 22px;;
+                    text-align: justify;
+                    margin-top: 40px;
+                    span{
+                        float: right;
+                    }
+                }
+                .courier_li_2{
+                    @include firaRegular;
+                    font-size: 18px;
+                    margin-top: 20px;
+                    margin-left: 120px;
+                    
+                }
+                .courier_li_3{
+                    margin-left: 120px;
+                    @include firaRegular;
+                    font-size: 18px;
+                    opacity: 0.5;
+                    color: #686868;
+                    margin-top: 8PX;
+                    margin-bottom: 24px;
+                }
+                >li:nth-of-type(12){
+                    @include firaMedium18;
+                    font-size: 24px;
+                    margin-top: 32px;
+                    margin-bottom: 45px;
+                }
+                >li:nth-of-type(14){
+                    @include firaMedium18;
+                    font-size: 24px;
+                    margin-top: 32px;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+}
+
+ .addres_street{
+    width: 485px;
+    height: 48px;
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    padding: 16px;
+ }  
+ .addres_home{
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    padding: 16px;
+    width: 136.19px;
+    height: 48px;
+    margin-left: 30px;
+ }
+ .addres_ap{
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    padding: 16px;
+    width: 185.32px;
+    height: 48px;
+    margin-top: 32px;
+    margin-bottom: 86px;
+ }
+ .addres_index{
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    padding: 16px;
+    height: 48px;
+    left: 321.76px;
+    margin-left: 30px;
+ }
+ .kontakt_name{
+    width: 290px;
+    height: 48px;
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    margin-top: 45px;
+    padding: 16px;
+ }
+ .kontakt_surname{
+    width: 332px;
+    height: 48px;
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    margin-top: 45px;
+    padding: 16px;
+    margin-left: 32px;
+ }
+ .kontakt_tel{
+    width: 528px;
+    height: 48px;
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    margin-top: 35px;
+    padding: 16px;    
+ }
+ .kontakt_index{
+    width: 528px;
+    height: 48px;
+    border: 1px solid #686868;
+    @include firaRegular;
+    font-size: 16px;
+    margin-top: 35px;
+    padding: 16px;   
+    margin-bottom: 50px; 
+ }
+.basket_right{
+    margin-top: 48px;
+    width: 485px;
+    
+    >div:first-child{
+        width: 432px;
+        height: 306px;
+        background: #FAFAFA;
+        padding: 18px;
+        margin-right: 50px;
+        >ul{
+            li:hover{
+                @include scale_up_center_stop;
+            }
+            >li{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 8px;
+                >div:first-child{
+                    @include firaRegular;
+                    font-size: 18px;
+                }
+            }
+            >li:first-child{
+                @include firaMedium18;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-top: 6px;
+                margin-bottom: 30px;
+
+            }
+            >li:nth-child(3){
+                margin-top: 20px;
+            }
+            >li:nth-child(5){
+                margin-bottom: 40px;
+            }
+            >li:last-child{
+                @include firaMedium18;
+                font-size: 24px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.basket_1{
+    width: 432px;
+    position: relative;
+    left: -18px;
+}
+.promocod{    
+    font-weight: 300;
+    font-size: 16px;
+    color: #686868;
+    padding: 18px;
+    width: 215px;
+    height: 40px;
+    margin-top: 18px;
+}
+.promocod_button{
+    @include firaRegular;
+    font-size: 16px;
+    color: $whiteStart;
+    background-color: $black;
+    width: 175px;
+    height: 40px;
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+}
+    .promocod_button:hover  {
+        background-color: rgb(39, 39, 39);
+}
+
+    .promocod_button:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
