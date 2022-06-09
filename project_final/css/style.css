@@ -593,24 +593,87 @@ footer {
     .icon_sneaker ul:first-of-type li:hover a {
       color: #ffffff; }
 .icon_sneaker ul.card_cneakers {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 36px; }
   .icon_sneaker ul.card_cneakers li {
     width: 240px;
     height: 402px; }
-    .icon_sneaker ul.card_cneakers li div:first-of-type {
+    .icon_sneaker ul.card_cneakers li div.card_sneakers_background {
       width: 240px;
       height: 265px;
-      background: url("../image/svg/heart.svg") right top no-repeat, url(../image/sneaker/sneaker_7.png) center no-repeat; }
+      background: url(../image/sneaker/Rectangle\ 28-1.png) center center no-repeat, #f3f3f399;
+      background-size: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .icon_sneaker ul.card_cneakers li div.card_sneakers_background div:nth-child(4) {
+        width: 1px;
+        height: 21px; }
+      .icon_sneaker ul.card_cneakers li div.card_sneakers_background div:nth-child(1) {
+        width: 68px;
+        height: 21px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #181818;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0;
+        display: none; }
+      .icon_sneaker ul.card_cneakers li div.card_sneakers_background div:nth-child(2) {
+        width: 50px;
+        height: 21px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #EE0004;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0;
+        display: none; }
+      .icon_sneaker ul.card_cneakers li div.card_sneakers_background div:nth-child(3) {
+        width: 50px;
+        height: 21px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #EE0004;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0;
+        display: none; }
+      .icon_sneaker ul.card_cneakers li div.card_sneakers_background div:nth-child(5) {
+        width: 21px;
+        height: 21px;
+        background: url(../image/svg/heart.svg) center no-repeat;
+        background-size: 90%;
+        margin: 12px; }
     .icon_sneaker ul.card_cneakers li p {
       font-family: 'Fira Sans';
       font-style: normal;
       font-weight: 400;
       letter-spacing: 0.02em;
       font-size: 18px;
-      color: #949494;
+      color: #181818;
       text-align: center; }
       .icon_sneaker ul.card_cneakers li p span {
-        color: #AAAAAA; }
+        color: #949494; }
     .icon_sneaker ul.card_cneakers li div:last-of-type {
       text-align: center;
       font-family: 'Fira Sans';
@@ -620,5 +683,303 @@ footer {
       letter-spacing: 0.02em;
       text-transform: uppercase;
       margin-top: 20px; }
+
+.page_number {
+  margin: 48px auto;
+  display: flex;
+  justify-content: center; }
+  .page_number li {
+    width: 42px;
+    height: 42px;
+    padding: 12px;
+    border: 0.2px solid #AAAAAA; }
+  .page_number li:first-child, .page_number li:last-child {
+    width: 116px;
+    height: 42px;
+    border: 0.2px solid #AAAAAA;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    padding: 0; }
+    .page_number li:first-child div, .page_number li:last-child div {
+      margin: 0;
+      padding: 12px; }
+
+.body_produkt {
+  background-color: #181818; }
+  .body_produkt .conteiner {
+    border-left: 8px solid #000000;
+    border-right: 8px solid #000000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; }
+    .body_produkt .conteiner .sneaker_produkt {
+      display: flex; }
+      .body_produkt .conteiner .sneaker_produkt ul {
+        margin-top: 103px;
+        margin-left: 36px; }
+        .body_produkt .conteiner .sneaker_produkt ul li:nth-child(1) {
+          margin-top: 8px; }
+          .body_produkt .conteiner .sneaker_produkt ul li:nth-child(1) a div {
+            width: 108px;
+            height: 108px;
+            background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
+            background-size: 100%; }
+        .body_produkt .conteiner .sneaker_produkt ul li:nth-child(2) {
+          margin-top: 8px; }
+          .body_produkt .conteiner .sneaker_produkt ul li:nth-child(2) a div {
+            width: 108px;
+            height: 108px;
+            background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
+            background-size: 100%;
+            -webkit-transform: rotate(90deg); }
+        .body_produkt .conteiner .sneaker_produkt ul li:nth-child(3) {
+          margin-top: 8px; }
+          .body_produkt .conteiner .sneaker_produkt ul li:nth-child(3) a div {
+            width: 108px;
+            height: 108px;
+            background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
+            background-size: 100%;
+            -webkit-transform: rotate(180deg); }
+        .body_produkt .conteiner .sneaker_produkt ul li:nth-child(4) {
+          margin-top: 8px; }
+          .body_produkt .conteiner .sneaker_produkt ul li:nth-child(4) a div {
+            width: 108px;
+            height: 108px;
+            background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
+            background-size: 100%;
+            -webkit-transform: rotate(270deg); }
+      .body_produkt .conteiner .sneaker_produkt > div {
+        width: 529px;
+        height: 540px;
+        background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
+        background-size: 100%;
+        margin-left: 72px;
+        margin-top: 61px; }
+    .body_produkt .conteiner .reviews {
+      width: 430px; }
+      .body_produkt .conteiner .reviews > div:nth-child(1) {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 18px;
+        color: #000000;
+        opacity: 0.4;
+        margin-top: 62px; }
+      .body_produkt .conteiner .reviews > div:nth-child(2) {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 22px;
+        color: #000000;
+        margin-top: 12px; }
+      .body_produkt .conteiner .reviews > div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px; }
+        .body_produkt .conteiner .reviews > div:nth-child(3) > div:first-child {
+          font-family: 'Fira Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          font-size: 26px; }
+        .body_produkt .conteiner .reviews > div:nth-child(3) > div:last-child {
+          font-family: 'Fira Sans';
+          font-style: normal;
+          font-weight: 400;
+          letter-spacing: 0.02em;
+          font-size: 16px;
+          opacity: 0.4;
+          margin-right: 64px; }
+      .body_produkt .conteiner .reviews > div:nth-child(5) {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 16px;
+        text-decoration-line: underline;
+        margin-top: 18px; }
+      .body_produkt .conteiner .reviews > div:nth-child(8) {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 16px;
+        text-decoration-line: underline;
+        margin-top: 23px; }
+      .body_produkt .conteiner .reviews > div:nth-child(9) {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 24px;
+        margin-top: 44px; }
+      .body_produkt .conteiner .reviews > div:nth-child(10) {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 18px;
+        margin-right: 65px; }
+
+div.nice_produkt {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 22px;
+  margin-left: 36PX;
+  margin-top: 32px; }
+
+ul.card_cneakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 36px;
+  margin-left: 36px;
+  margin-top: 23px; }
+  ul.card_cneakers li {
+    width: 240px;
+    height: 402px;
+    margin-left: 16px; }
+    ul.card_cneakers li div.card_sneakers_background {
+      width: 240px;
+      height: 265px;
+      background: url(../image/sneaker/Rectangle_28-1.png) center center no-repeat, #f3f3f399;
+      background-size: 100%;
+      display: flex;
+      justify-content: space-between; }
+      ul.card_cneakers li div.card_sneakers_background div:nth-child(4) {
+        width: 1px;
+        height: 21px; }
+      ul.card_cneakers li div.card_sneakers_background div:nth-child(1) {
+        width: 68px;
+        height: 21px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #181818;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0;
+        display: none; }
+      ul.card_cneakers li div.card_sneakers_background div:nth-child(2) {
+        width: 50px;
+        height: 21px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #EE0004;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0;
+        display: none; }
+      ul.card_cneakers li div.card_sneakers_background div:nth-child(3) {
+        width: 50px;
+        height: 21px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #EE0004;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0;
+        display: none; }
+      ul.card_cneakers li div.card_sneakers_background div:nth-child(5) {
+        width: 21px;
+        height: 21px;
+        background: url(../image/svg/heart.svg) center no-repeat;
+        background-size: 90%;
+        margin: 12px; }
+    ul.card_cneakers li p {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      font-size: 18px;
+      color: #181818;
+      text-align: center; }
+      ul.card_cneakers li p span {
+        color: #949494; }
+    ul.card_cneakers li div:last-of-type {
+      text-align: center;
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-top: 20px; }
+
+.select_0 {
+  width: 367px;
+  height: 78px;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 26px;
+  margin-top: 32px; }
+
+.basket {
+  margin-top: 50px;
+  width: 295px;
+  height: 68px;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #EE0004;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6); }
+
+.basket:hover {
+  background-color: red; }
+
+.basket:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6); }
+
+.basket_heart {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #949494;
+  background: url(../image/svg/heart.svg) center no-repeat;
+  background-size: 90%; }
 
 /*# sourceMappingURL=style.css.map */
