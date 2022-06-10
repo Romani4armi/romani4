@@ -31,8 +31,8 @@
     -webkit-transform: scale(1);
     transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); } }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
 @keyframes scale-up-center2 {
   0% {
     -webkit-transform: scale(1);
@@ -176,36 +176,36 @@ header div.conteiner {
       background: url(../image/svg/home.svg) center center no-repeat;
       margin-right: 15px; }
 
-div.cards_sneaker ul {
+div.cards_sneaker > ul {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   border-left: 8px solid #000000;
   border-right: 8px solid #000000;
   background-color: #ffffff; }
-  div.cards_sneaker ul li {
+  div.cards_sneaker > ul > li {
     width: 416px;
     height: 416px;
     background: url(../image/sneaker/sneaker_1.png) center no-repeat, #f3f3f3;
     margin: 5px;
     margin-bottom: 44px; }
-    div.cards_sneaker ul li a div {
+    div.cards_sneaker > ul > li > a img {
       width: 416px;
       height: 416px; }
-  div.cards_sneaker ul li:last-of-type {
+  div.cards_sneaker > ul > li:last-of-type {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
     background: #ffffff; }
-    div.cards_sneaker ul li:last-of-type div {
+    div.cards_sneaker > ul > li:last-of-type > div {
       background: url(../image/sneaker/sneaker_3.png) center no-repeat, #f3f3f3;
       background-size: contain;
       width: 204px;
       height: 204px; }
-      div.cards_sneaker ul li:last-of-type div a div {
+      div.cards_sneaker > ul > li:last-of-type > div > a img {
         width: 200px;
         height: 200px; }
-      div.cards_sneaker ul li:last-of-type div a:hover {
+      div.cards_sneaker > ul > li:last-of-type > div a:hover {
         -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
         animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
 

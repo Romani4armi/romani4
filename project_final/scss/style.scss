@@ -3,6 +3,7 @@
 @import "keyframes.scss";
 @import "range_slider.scss";
 
+
 // font-family: 'Fira Sans', sans-serif;
 // font-family: 'Lobster', cursive;
 // font-family: 'Open Sans', sans-serif;
@@ -126,39 +127,39 @@ header{
     }
 }
 div.cards_sneaker{
-    ul{
+    >ul{
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
         border-left: 8px solid #000000;
         border-right: 8px solid #000000;
         background-color: $whiteStart;
        
-        li{
+        >li{
             width: 416px;
             height: 416px;
             background:  url(../image/sneaker/sneaker_1.png)center no-repeat,$sneakerWite  ;
             margin: 5px;
             margin-bottom: 44px;
-            a{
-                div{
+            >a{
+               img{
                     width: 416px;
                     height: 416px;
                 }
             }
         }
-        li:last-of-type{
+        >li:last-of-type{
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
             justify-content: space-between;
             background: $whiteStart;
-            div{
+            >div{
                 background: url(../image/sneaker/sneaker_3.png) center no-repeat,$sneakerWite;
                 background-size: contain;
                 width: 204px;
                 height: 204px;
-                a{
-                    div{
+                >a{
+                    img{
                         width: 200px;
                         height: 200px;
                     }
