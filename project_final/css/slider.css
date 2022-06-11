@@ -11,10 +11,14 @@
 /* Лента слайдов */
 .slick-track{
     display: flex;
+    justify-content: space-between;
 }
 /* Слайд */
 .slick-slide{
     width: 400px;height: 400px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-bottom: 44px;
     
 }
 /* Слайд активный (показывается) */
@@ -28,9 +32,13 @@
 /* Стрелка */
 .slick-arrow{}
 /* Стрелка влево */
-.slick-arrow.slick-prev{}
+.slick-arrow.slick-prev{
+    display: none;
+}
 /* Стрелка вправо */
-.slick-arrow.slick-next{}
+.slick-arrow.slick-next{
+    display: none;
+}
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
@@ -40,3 +48,6 @@
 .slick-dots li.slick-active{}
 /* Элемент точки */
 .slick-dots li button{}
+.slick-prev .slick-arrow{
+    display: none !important;
+}

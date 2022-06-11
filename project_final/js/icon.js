@@ -11,7 +11,7 @@ for(var i=0; i<sneakersArr.length; i++){
    sneakersArr[i].discount>0?discountSneaker='style="display:block"':discountSneaker='';
     html+=`
     <li> 
-    <div  onclick="clickFunc" class="card_sneakers_background" style="${sneakersArr[i].background}">
+    <div  onclick="clickFunc" class="card_sneakers_background" style="background:url(${sneakersArr[i].background})center center no-repeat,#f3f3f399;">
        
         <div ${newSnekerV}>новинка</div>
         <div  ${hitTovar} >хит</div>
@@ -28,7 +28,5 @@ for(var i=0; i<sneakersArr.length; i++){
     
 }
 
-function  clickFunc(){
-    alert('123')
-}
+
 ul.innerHTML = html;
