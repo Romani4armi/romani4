@@ -161,16 +161,16 @@ div_3.innerHTML=html_prod_3;
 
 
 localStorage.smotr+=','+localStorage.test;
-console.log(localStorage.smotr);
+
 var div_4 = document.querySelector('ul.card_cneakers:last-child');
 var html_nice='';
 
 var localStorArr=localStorage.smotr.split(',');
-console.log(localStorArr);
+
 var x1;
 for(var i=0;i<3;i++){
     x1=(localStorArr.pop());
-    console.log(x1)
+    
     sneakersArr[x1].newSneker==true?newSnekerV='style="display:block"':newSnekerV='';
     sneakersArr[x1].hit==true?hitTovar='style="display:block"':hitTovar='';
     sneakersArr[x1].discount>0?discountSneaker='style="display:block"':discountSneaker='style="display:none"';

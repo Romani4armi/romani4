@@ -1,13 +1,20 @@
 $(document).ready(function(){
     $('.slider').slick({
         slidesToShow: 3,
+        
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows:false,   
        
       });
+      
 });
+var heightKonteiner;
+window.addEventListener('resize',function(){
+ heightKonteiner = this.innerWidth;
+});
+  
 localStorage.test=1;
 var ul=document.querySelector(".slider");
 var html_slid = '';
@@ -15,7 +22,7 @@ var html_slid = '';
 for(var i=0; i<sneakersArr.length; i++){
   
   html_slid+=`
-  <li class="slider_slick"><a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><img src="${sneakersArr[i].background}" alt="sneaker"  width="400px" height="400px"></a></li>
+  <li class="slider_slick"><a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><img src="${sneakersArr[i].background}" alt="sneaker"  width="${document.querySelector('.conteiner').offsetWidth/3.35}px" height="${document.querySelector('.conteiner').offsetWidth/3.35}px"></a></li>
   `
 }
 ul.innerHTML=html_slid;
@@ -30,3 +37,4 @@ ul.innerHTML=html_slid;
 // prodVis+=','+idProdukt_local;
 // localStorage.smotr=prodVis;
 localStorage.smotr.length<5?localStorage.smotr='15,14,13':true;
+localStorage.basketId=',';

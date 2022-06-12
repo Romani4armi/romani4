@@ -1,0 +1,50 @@
+@media  all and (max-width:1342px){
+    .sale > .conteiner{
+        margin: 0px;
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+        
+}
+@media  all and (max-width:1060px){
+    header div.conteiner{
+        flex-wrap:wrap; 
+        
+        justify-content: center;
+    }
+    header div.conteiner >div{
+        align-self:flex-start;
+    }
+}
+@media  all and (max-width:1060px){
+    footer .conteiner div.sneaker_2 ul:last-child{
+        flex-shrink: 1;
+    }
+    footer .conteiner div.sneaker_2{
+        flex-wrap: wrap;
+    }
+    .sale .conteiner a:nth-child(1) ul li:nth-child(7){
+        display: none;
+    }
+    h1{
+        height: auto;
+    }
+    .conteiner{
+        overflow-x: hidden;
+    }
+}
+@media  all and (max-width:666px){
+
+    header div.conteiner ul:first-of-type{
+        flex-wrap: wrap;
+    }
+    .sale .conteiner a:first-child{
+        display: none;
+    }
+    .sale .conteiner a:nth-child(2) ul{
+        align-items: center;
+    }
+}

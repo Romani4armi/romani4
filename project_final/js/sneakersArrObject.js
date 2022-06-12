@@ -8,7 +8,8 @@ var sneakersArr=[
        discount : 0,
        heart: false,
        price: 274,   
-       idProdukt: 0,        
+       idProdukt: 0,  
+             
     },
     {
         brend: 'Nike ',

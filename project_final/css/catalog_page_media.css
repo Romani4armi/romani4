@@ -1,0 +1,61 @@
+@media  all and (max-width:1085px){
+    .icon_sneaker ul:first-of-type li{
+        height: auto;
+    }
+    header div.conteiner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icon_sneaker ul:first-of-type{
+        flex-wrap: wrap;
+    }
+    footer .conteiner div.sneaker_2{
+        flex-wrap: wrap;
+    }
+}
+@media  all and (max-width:670px){
+    .content_body .conteiner{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .card_cneakers{
+        padding: 15px;
+        justify-content: space-around;
+    }
+    header div.conteiner ul:first-of-type{
+        flex-wrap: wrap;
+    }
+}
+@media  all and (max-width:400px){
+    .card_cneakers{
+        padding: 15px;
+    }
+    .list_woomen .conteiner{
+        display: none;
+    }
+    .content_body .conteiner .filter_woomen li{
+        margin: 0;
+    }
+    .icon_sneaker ul.card_cneakers{
+        justify-content: center;
+    }
+    .page_number li:first-child, .page_number li:last-child{
+        width: 80px;
+
+    }
+    .page_number li:first-child div, .page_number li:last-child div{
+        padding: 7px;
+        padding-top: 12px;
+    }
+    footer .conteiner div.sneaker_2{
+        padding: 0;
+        justify-content: center;
+    }
+    footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(3) a:nth-child(4) div{
+        margin-bottom: 35px;
+    }
+    footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(2){
+        width: 250px;
+    }
+}

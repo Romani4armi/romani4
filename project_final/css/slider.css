@@ -51,3 +51,18 @@
 .slick-prev .slick-arrow{
     display: none !important;
 }
+@media  all and (max-width:1160px){
+    .slick-slide{
+        width: 400px;height: 400px;
+        margin: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        
+    }
+   
+}
+@media  all and (max-width:800px){
+    .slick-slide{
+        height: 200px;
+    }
+}

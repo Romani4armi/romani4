@@ -1,0 +1,157 @@
+@media all and (max-width:1343px){
+    .kontakt_surname{
+        margin-left: 0px;
+    }
+
+}
+@media all and (max-width:1338px){
+    .addres_home{
+        margin-left: 0px;
+        margin-top: 32px;
+    }
+
+}
+@media all and (max-width:1205px){
+    .body_basket .conteiner{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .basket_right{
+        margin-bottom: 200px;
+    }
+    .kontakt_surname{
+        margin-left: 0px;
+    }
+}
+@media all and (max-width:722px){
+    .body_basket .conteiner{
+        overflow: hidden;
+    }
+    .kontakt_tel{
+        width: 100%;
+    }
+    .body_basket .conteiner .produkt_basket > ul > li{
+        margin-left: 20px;
+    }
+}
+@media all and (max-width:650px){
+    .body_basket .conteiner .produkt_basket{
+        margin: 0;
+        padding: 10px;
+    }
+    .kontakt_index{
+        width: 100%;
+    }
+    .addres_street{
+        width: 100%;
+    }
+    .body_basket .conteiner .produkt_basket > ul > li{
+        margin-left: 0;
+    }
+    .body_basket .conteiner .produkt_basket .card_basket > div{
+        flex-wrap: wrap;
+    }
+    .basket_right > div:first-child{
+        width: auto;
+    }
+    .basket_right > div:first-child{
+        margin-right: 0;
+    }
+    .basket_1{
+        position:static ;
+    }
+    .addres_ap{
+        margin-bottom: 32px;
+       
+    }
+    .addres_index{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    .basket_1{
+        width: 100%;
+    }
+}
+@media all and (max-width:420px){
+    .body_basket .conteiner .produkt_basket .card_basket > div > div{
+        width: 320px;
+        height: 320px;
+    }
+    .body_basket .conteiner .produkt_basket .card_basket > div{
+        justify-content: center;
+    }
+    .body_basket .conteiner .produkt_basket .card_basket > div > ul > li:nth-child(6){
+        flex-wrap: wrap;
+    }
+    .body_basket .conteiner .produkt_basket > ul > li:nth-child(2){
+        flex-wrap: wrap;
+    }
+    .body_basket .conteiner .produkt_basket > ul > li:nth-child(2) > div:last-child > select{
+        margin-top: 20px;
+    }
+    .body_basket .conteiner .produkt_basket > ul > li:nth-child(1),.body_basket .conteiner .produkt_basket > ul > li{
+        text-align: center;
+    }
+
+}
+@media all and (max-width:360px){
+.body_basket .conteiner .produkt_basket .card_basket > div > div{
+    width: 240px;
+    height: 240px;
+}
+.body_basket .conteiner .produkt_basket .card_basket > div > ul{
+    margin: 0;
+}
+.body_basket .conteiner .produkt_basket .card_basket > div > ul > li:nth-child(1){
+    width: 260px;
+}
+.body_basket .conteiner .produkt_basket > ul > li:nth-child(1){
+    width: 250px;
+    margin: 0;
+    margin-top: 32px;
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_2{
+    margin-left: 10;
+    margin-top: 15px;
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_3{
+    margin-left: 10px;
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_2{
+    margin-left: 10px;
+}
+.produkt_basket >ul{
+    width: 300px;
+   padding: 20px;
+   padding-right: 40px;
+}
+.produkt_basket >ul>li{
+    width: 300px;
+}
+form {
+    width: 260px;
+
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_1 span{
+    float: none;
+}
+.kontakt_name{
+    width: 100%;
+}
+.kontakt_surname{
+    width: 100%;
+}
+.body_basket .conteiner .produkt_basket > ul > li:nth-child(2) > div:last-child > select{
+    width: 260px;
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_1{
+    width: 260px;
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_2{
+    width: 260px;
+}
+.body_basket .conteiner .produkt_basket > ul .courier_li_3{
+    width: 260px;
+}
+}
