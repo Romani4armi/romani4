@@ -588,13 +588,15 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
         padding-right: 36px;
-        li{
+        margin-left: 0;
+        >li{
             width: 240px;
             height: 402px;
+            margin-left: 0;
             div.card_sneakers_background{
                 width: 240px;
                 height: 265px;
-                background:url(../image/sneaker/Rectangle\ 28-1.png)center center no-repeat,#f3f3f399;
+                background:url(../image/sneaker/Rectangle_28-1.png)center center no-repeat,#f3f3f399;
                 background-size: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -755,7 +757,8 @@ footer{
                         }
                     }
                 }
-                >div{
+                >a{
+                div{
                     width: 529px;
                     height: 540px;
                     background: url(../image/sneaker/Rectangle_28-1.png) center no-repeat;
@@ -763,7 +766,8 @@ footer{
                     margin-left: 72px;
                     margin-top: 61px;
                 }
-            
+
+                }
         }
 
         .reviews{

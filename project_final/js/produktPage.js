@@ -4,14 +4,15 @@ for(var i=0; i<sneakersArr.length; i++){
     if( localStorage.test==sneakersArr[i].idProdukt){
   html_prod+=`
   <ul>
-        <li><a href=""><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
-        <li><a href=""><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
-        <li><a href=""><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
-        <li><a href=""><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
+        <li><a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
+        <li><a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
+        <li><a  onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
+        <li><a  onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div></a></li>
                             
   </ul>
+  <a  onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html">
   <div style="background: url(${sneakersArr[i].background}) center no-repeat;  background-size: 100%;"></div>
-                        
+    </a>                    
 
   `} else {
     continue;
@@ -139,7 +140,7 @@ for(var i=(idProdukt_local-1);i<(idProdukt_local+2);i++){
 html_prod_3+=
 `
 
-  <li> 
+  <li > <a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html">
                             <div class="card_sneakers_background" style="background: url(${sneakersArr[i].background}) center center no-repeat, #f3f3f399; background-size: 100%;">
                                 <div></div>
                                 <div ${newSnekerV}>новинка</div>
@@ -151,7 +152,7 @@ html_prod_3+=
                                <span>${sneakersArr[i].brend} </span> /  ${sneakersArr[i].description} 
                             </p> 
                             <div>${sneakersArr[i].price} р</div>                       
-                        </li>
+                      </a>  </li>
                        
 
   `      
@@ -176,7 +177,7 @@ for(var i=0;i<3;i++){
    
   
     html_nice+=` 
-    <li> 
+    <li> <a onclick="localStorage.test = ${sneakersArr[x1].idProdukt}"  href="productPage.html">
                             <div class="card_sneakers_background" style="background: url(${sneakersArr[x1].background}) center center no-repeat, #f3f3f399; background-size: 100%;">
                                 <div></div>
                                 <div ${newSnekerV}>новинка</div>
@@ -188,7 +189,7 @@ for(var i=0;i<3;i++){
                                <span>${sneakersArr[x1].brend} </span> /  ${sneakersArr[x1].description} 
                             </p> 
                             <div>${sneakersArr[x1].price} р</div>                       
-                        </li>
+                      </a>  </li>
                        
     `
 }
