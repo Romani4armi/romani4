@@ -38,8 +38,8 @@
     -webkit-transform: scale(1);
     transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); } }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

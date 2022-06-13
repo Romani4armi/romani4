@@ -21,6 +21,7 @@ for(var i=0; i<sneakersArr.length; i++){
     continue;
   }
 }
+
 div.innerHTML=html_prod;
 var div_3 = document.querySelector('.card_cneakers');
 var html_card_cneakers='';
@@ -30,6 +31,8 @@ var html_prod_2 = '';
 var html_prod_3 = '';
 for(var i=0; i<sneakersArr.length; i++){
     if( localStorage.test==sneakersArr[i].idProdukt){
+        var colorHeard='';
+        arrBasket[i]=='true'?colorHeard='style="background: url(image/svg/heartRed.svg) center no-repeat; background-size:90%"':true;
         idProdukt_local=i;
   html_prod_2+=`
   <div>${sneakersArr[i].brend}</div>
@@ -59,7 +62,7 @@ for(var i=0; i<sneakersArr.length; i++){
   </form>
   <div>Таблица размеров</div>
   <input onclick="pushBasket(${sneakersArr[i].idProdukt})" class="basket" type="button" name="basket" value="добавить в корзину">
-  <input onclick="clickFunc2(${sneakersArr[i].idProdukt})" class="basket_heart" type="button_heart" id="basket_heart" name="basket_heart" >
+  <input onclick="clickFunc2(${sneakersArr[i].idProdukt})" class="basket_heart" ${colorHeard} type="button_heart" id="basket_heart" name="basket_heart" >
   <div>Условия доставки</div>
   <div>О товаре</div>
   <div>Кроссовки выполнены из полупрозрачного полимерного материала, искусственной кожи и текстиля. Детали: шнуровка, текстильная внутренняя отделка, подошва с видимой амортизацией Air под стопой и блоком Zoom Air в передней части стопы для максимального комфорта.</div>

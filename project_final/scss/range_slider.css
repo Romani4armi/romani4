@@ -1,0 +1,26 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.slider_price {
+  display: block;
+  width: 94px;
+  height: 46px;
+  border: box;
+  border: solid 1px #C4C4C4;
+  padding: 8px;
+  padding-top: 3px; }
+  .slider_price span {
+    color: #949494; }
+  .slider_price input {
+    color: #000;
+    font-size: 16px; }
+
+.slider_filter {
+  border: none; }
+
+/*# sourceMappingURL=range_slider.css.map */
