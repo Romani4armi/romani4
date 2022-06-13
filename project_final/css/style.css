@@ -116,6 +116,9 @@ h1 {
       font-size: 52px;
       width: 245px; }
 
+.body_produkt .conteiner .sneaker_produkt > a div {
+  margin-right: 25px; }
+
 header div.conteiner {
   background-color: #ffffff;
   margin-top: 70px;

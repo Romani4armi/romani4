@@ -1,5 +1,8 @@
 var div=document.querySelector(".sneaker_produkt");
 var html_prod = '';
+var arrBasket = localStorage.heart.split(',');
+console.log(arrBasket);
+
 for(var i=0; i<sneakersArr.length; i++){
     if( localStorage.test==sneakersArr[i].idProdukt){
   html_prod+=`
@@ -55,8 +58,8 @@ for(var i=0; i<sneakersArr.length; i++){
       
   </form>
   <div>Таблица размеров</div>
-  <input class="basket" type="button" name="basket" value="добавить в корзину">
-  <input class="basket_heart" type="button_heart" name="basket_heart" >
+  <input onclick="pushBasket(${sneakersArr[i].idProdukt})" class="basket" type="button" name="basket" value="добавить в корзину">
+  <input onclick="clickFunc2(${sneakersArr[i].idProdukt})" class="basket_heart" type="button_heart" id="basket_heart" name="basket_heart" >
   <div>Условия доставки</div>
   <div>О товаре</div>
   <div>Кроссовки выполнены из полупрозрачного полимерного материала, искусственной кожи и текстиля. Детали: шнуровка, текстильная внутренняя отделка, подошва с видимой амортизацией Air под стопой и блоком Zoom Air в передней части стопы для максимального комфорта.</div>
@@ -194,6 +197,7 @@ for(var i=0;i<3;i++){
     `
 }
 div_4.innerHTML=html_nice;
+
 
 
 

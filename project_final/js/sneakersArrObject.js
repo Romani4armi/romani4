@@ -177,3 +177,4 @@ var sneakersArr=[
         idProdukt: 15,
     }
     ]
+    

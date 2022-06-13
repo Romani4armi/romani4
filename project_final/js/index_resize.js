@@ -38,3 +38,25 @@ ul.innerHTML=html_slid;
 // localStorage.smotr=prodVis;
 localStorage.smotr.length<5?localStorage.smotr='15,14,13':true;
 localStorage.basketId=',';
+localStorage.count=0;
+localStorage.brend='';
+    localStorage.description='';
+    localStorage.background='';
+    localStorage.newSneker='';
+    localStorage.hit='';
+    localStorage.discount='';
+    localStorage.heart='';
+    localStorage.price='';
+    localStorage.idProdukt='';
+    for(var i=0; i<sneakersArr.length;i++){
+        localStorage.brend+=sneakersArr[i].brend+',';
+        localStorage.description+=sneakersArr[i].description+','
+        localStorage.background+=sneakersArr[i].background+','
+        localStorage.newSneker+=sneakersArr[i].newSneker+','
+        localStorage.hit+=sneakersArr[i].hit+','
+        localStorage.discount+=sneakersArr[i].discount+','
+        localStorage.heart+=sneakersArr[i].heart+','
+        localStorage.price+=sneakersArr[i].price+','
+        localStorage.idProdukt+=sneakersArr[i].idProdukt+','
+    }
+    

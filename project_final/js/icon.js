@@ -1,3 +1,20 @@
+    // localStorage.brend
+    // localStorage.description
+    // localStorage.background
+    // localStorage.newSneker
+    // localStorage.hit
+    // localStorage.discount
+    // localStorage.heart
+    // localStorage.price
+    // localStorage.idProdukt
+
+    
+
+
+
+
+
+
 
 var brend=document.getElementById('nike');
 var ul=document.querySelector(".card_cneakers");
@@ -41,17 +58,23 @@ function brend(a){
         }
     }
 
-
-
+    var heartArr=[];
+heartArr=localStorage.heart.split(',');
+console.log('mass '  + heartArr);
+console.log(' stor ' + localStorage.heart);
+localStorage.count=0;
 for(var i=0; i<sneakersArr.length; i++){
+
    sneakersArr[i].newSneker==true?newSnekerV='style="display:block"':newSnekerV='';
    sneakersArr[i].hit==true?hitTovar='style="display:block"':hitTovar='';
    sneakersArr[i].discount>0?discountSneaker='style="display:block"':discountSneaker='';
-   sneakersArr[i].heart==false?heartColor='':heartColor='style="background: url(image/svg/heartRed.svg) center no-repeat;background-size: 90%;"'
+
+   heartArr[i]=='false'?heartColor='':heartColor='style="background: url(image/svg/heartRed.svg) center no-repeat;background-size: 90%;"'
+    heartArr[i]=='true'?localStorage.count++:true;
 
     
     html+=`
-    <li "> 
+    <li > 
         <div class="up_icon" >
     
             <div ${newSnekerV}>новинка</div>
@@ -75,5 +98,8 @@ for(var i=0; i<sneakersArr.length; i++){
     
 }
 
-
+var checkboxBrend = document.getElementsByTagName('input');
+localStorage.heart=heartArr.join(',');
 ul.innerHTML = html;
+var kolProdukt = document.getElementById('kvoProdukt');
+    kolProdukt.innerText=sneakersArr.length;

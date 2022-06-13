@@ -3,8 +3,14 @@ var html_bask='';
 var baskArr=[];
 var summa=0;
 
+function deleteProdukt(a){
+   var arrayHeart=localStorage.heart.split(',')
+   arrayHeart[a]='false';
+   localStorage.heart=arrayHeart.join(',');
+   localStorage.count--;
+ }
 baskArr  =  localStorage.basketId.split(',')
-console.log(baskArr);
+
 for(var i=0;i<baskArr.length;i++){
     var k=1;
     for(var j=(i+1);j<baskArr.length;j++){
@@ -20,10 +26,25 @@ for(var i=0;i<baskArr.length;i++){
 
 baskArr.pop();
 baskArr.shift();
+
+var arrLocal=[];
+var arrLocal2;
+var k1=0;
+arrLocal = localStorage.basketId.split(',');
+
+// console.log('мой масс' + arrLocal)
+// for(var i=0; i<arrLocal.length;i++){
+//     if(Number(arrLocal[i])!=NaN){
+//         arrLocal2[k]=arrLocal[i];
+//     }
+// }
+// console.log('мой масс2' + arrLocal2)
 var counterProduct=0 ;
 var counter_P = document.getElementById('prudukt_counter');
+var arrBasket=localStorage.heart.split(',');
+console.log(arrBasket);
 for(var i=0; i<sneakersArr.length;i++){
-   if(baskArr.includes(sneakersArr[i].idProdukt.toString())){
+   if(arrBasket[i]=='true'){
         sneakersArr[i].newSneker==true?newSnekerV='style="display:block"':newSnekerV='';
         sneakersArr[i].hit==true?hitTovar='style="display:block"':hitTovar='';
         sneakersArr[i].discount>0?discountSneaker='style="display:block"':discountSneaker='';
@@ -41,7 +62,7 @@ for(var i=0; i<sneakersArr.length;i++){
                             <li>${sneakersArr[i].price} р.</li>
                             <li>
                                 <div>ИЗМЕНИТЬ</div>
-                                <div>УДАЛИТЬ ТОВАР</div>
+                                <div> <a href="basket.html"> <button onclick="deleteProdukt(${sneakersArr[i].idProdukt})">УДАЛИТЬ ТОВАР</button> </a></div>
                             </li>
                         </ul> 
         </div>
@@ -85,3 +106,4 @@ function summaKurier(){
  `
  basketRight.innerHTML= html_summa;
  counter_P.innerText=counterProduct;
+ localStorage.heart=arrBasket.join(',');
