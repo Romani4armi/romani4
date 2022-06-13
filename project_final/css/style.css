@@ -1521,4 +1521,19 @@ header div.conteiner ul:last-of-type a:nth-child(3) li {
   background-color: #000;
   color: #fff; }
 
+.counter_basket {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-left: 31px;
+  margin-top: 20px; }
+
+header div.conteiner ul:last-of-type a:nth-child(2) li {
+  padding-top: 1px; }
+
 /*# sourceMappingURL=style.css.map */

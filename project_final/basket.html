@@ -30,8 +30,8 @@
                 </ul>
                 <ul>
                     <a href=""><li> </li></a>
-                    <a href="basket.html"><li> </li></a>
-                    <a href="productPage.html"><li> <p class="counter_basket"></p> </li></a>
+                    <a href="basket.html"><li><p class="counter_basket"></p>  </li></a>
+                    <a href="productPage.html"><li> </p> </li></a>
                     <a href=""><li> </li></a>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="basket_basket"> 
             <div class="conteiner">
-                <div> Корзина (1)</div>
+                <div> Корзина (<span id="prudukt_counter"> 1</span>)</div>
                  
             </div>
                
@@ -83,7 +83,7 @@
                         <li class="courier_li_2">Ориентировочная дата доставки: 12 января</li>
                         <li class="courier_li_3">Услуги примерки и отказа не предосталяются</li>
                         <li class="courier_li_1">
-                            <input type="radio" value="2" name="courier_1">
+                            <input onclick="summaKurier" type="radio" value="2" name="courier_1" id="kurier_2">
                             Курьер (c примеркой)
                             <span>5 р</span>
                         </li>

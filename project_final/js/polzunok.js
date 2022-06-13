@@ -1,3 +1,6 @@
+var in0;
+var in1;
+
 const rangeSlider = document.getElementById('slider_output')
 if (rangeSlider){
     noUiSlider.create(rangeSlider, {
@@ -11,6 +14,7 @@ if (rangeSlider){
 });
 const input0=document.getElementById('i-0');
 const input1=document.getElementById('i-1');
+
 const inputs=[input0,input1];
 rangeSlider.noUiSlider.on('update', function(values,handle){
     inputs[handle].value=Math.round(values[handle]);

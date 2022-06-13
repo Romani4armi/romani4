@@ -20,7 +20,8 @@ for(var i=0;i<baskArr.length;i++){
 
 baskArr.pop();
 baskArr.shift();
-
+var counterProduct=0 ;
+var counter_P = document.getElementById('prudukt_counter');
 for(var i=0; i<sneakersArr.length;i++){
    if(baskArr.includes(sneakersArr[i].idProdukt.toString())){
         sneakersArr[i].newSneker==true?newSnekerV='style="display:block"':newSnekerV='';
@@ -28,7 +29,7 @@ for(var i=0; i<sneakersArr.length;i++){
         sneakersArr[i].discount>0?discountSneaker='style="display:block"':discountSneaker='';
         sneakersArr[i].heart==false?heartColor='':heartColor='style="background: url(image/svg/heartRed.svg) center no-repeat;background-size: 90%;"'
           summa+=(sneakersArr[i].price)*1;
-          
+          counterProduct++;
     html_bask+=`
         <div>
                         <div style="background:url(${sneakersArr[i].background})center center no-repeat,#f3f3f399;"></div>
@@ -49,6 +50,9 @@ for(var i=0; i<sneakersArr.length;i++){
 div.innerHTML=html_bask;
 var basketRight = document.querySelector('.basket_right');
 var html_summa = '';
+function summaKurier(){
+        summa+=5;
+}
  html_summa = `
  <div>
                         <ul>
@@ -80,3 +84,4 @@ var html_summa = '';
                     </div>
  `
  basketRight.innerHTML= html_summa;
+ counter_P.innerText=counterProduct;
