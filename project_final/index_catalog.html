@@ -26,7 +26,7 @@
                 <li><a href="basket.html">Контакты</a></li>
             </ul>
             <ul>
-                <a href=""><li> </li></a>
+                <li id="vkl_poisk" onclick="vklPoisk()"> <input type="text"  class="poisk"> </li>
                 <a href="basket.html"><li><p class="counter_basket"></p> </li></a>
                 <a href="productPage.html"><li>  </li></a>
                 <a href=""><li> </li></a>
@@ -61,14 +61,14 @@
                     <li class="li_title">кОЛЛЕКЦИИ</li>
                     <li class="li_title">фИЛЬТРЫ</li>
                     <li class="li_title">бренд</li>
-                    <li><input name="brendsn" onclick="getCheckedCheckBoxes()" type="checkbox" value="Nike"> Nike</li>
-                    <li><input name="brendsn" onclick="getCheckedCheckBoxes()"  type="checkbox" value="Adidas"> Adidas</li>
-                    <li><input name="brendsn" onclick="getCheckedCheckBoxes()"  type="checkbox" value="Puma"> Puma</li>
-                    <li><input name="brendsn"  onclick="getCheckedCheckBoxes()"  type="checkbox" value="Reebok"> Reebok</li>
-                    <li><input  name="brendsn" onclick="getCheckedCheckBoxes()"  type="checkbox" value="Converse"> Converse</li>
-                    <li><input  name="brendsn"  onclick="getCheckedCheckBoxes()" type="checkbox" value="Dr_Martens"> Dr. Martens</li>
-                    <li><input  name="brendsn" onclick="getCheckedCheckBoxes()"  type="checkbox" value="New_Balance"> New Balance</li>
-                    <li><input  name="brendsn" onclick="getCheckedCheckBoxes()"  type="checkbox" value="Fila"> Fila</li>
+                    <li><input name="brendsn" onclick="sneakerBrend('Nike')" type="checkbox" value="Nike"> Nike</li>
+                    <li><input name="brendsn" onclick="sneakerBrend('Adidas')"  type="checkbox" value="Adidas"> Adidas</li>
+                    <li><input name="brendsn" onclick="sneakerBrend('Puma')"  type="checkbox" value="Puma">Puma </li>
+                    <li><input name="brendsn"  onclick="sneakerBrend('Reebok')"  type="checkbox" value="Reebok"> Reebok</li>
+                    <li><input  name="brendsn" onclick="sneakerBrend('Converse')"  type="checkbox" value="Converse"> Converse</li>
+                    <li><input  name="brendsn"  onclick="sneakerBrend('Dr. Martens')" type="checkbox" value="Dr_Martens"> Dr. Martens</li>
+                    <li><input  name="brendsn" onclick="sneakerBrend('New Balance')"  type="checkbox" value="New_Balance"> New Balance</li>
+                    <li><input  name="brendsn" onclick="sneakerBrend('Fila')"  type="checkbox" value="Fila"> Fila</li>
                     <li class="li_title">цена</li>
                     <li class="slider_output" id="slider_output"> </li>
                     <li class="min_max"> <div>Min</div>      <div>Max</div></li>

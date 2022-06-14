@@ -107,10 +107,26 @@ header{
                 background-color: #fff;
                
             }
-            a:nth-child(1){
-                li{ background: url(../image/svg/poisk.svg) center center no-repeat;}
-               
-               
+            
+                li:nth-child(1){ 
+                    background: url(../image/svg/poisk.svg) center center no-repeat;
+                    position: relative;
+                    input.poisk{
+                        position: absolute;
+                        height: 40px;
+                        width: 400px;
+                        border-radius: 10px;
+                        border: solid 1px $grayNormal  ;
+                        top: 45px;
+                        right: 100px;
+                        padding-left: 25px;
+                        display: none;
+                    }             
+            }
+            li:nth-child(1):hover{
+                input.poisk{
+                    display: block;
+                }
             }
             a:hover{
                 @include scale_up_center2;
@@ -326,7 +342,7 @@ div.cards_sneaker{
         }
         .choice_sneaker{
             background: url(../image/sneakers.png) center no-repeat;
-            background-size: cover;
+            background-size: 120%;
             padding-top: 1px;
             padding-bottom: 46px;
             margin-left: -1px;
@@ -359,6 +375,11 @@ div.cards_sneaker{
             }
         }
     }
+}
+.choice_sneaker_parand{
+    overflow: hidden;
+    margin-left: -2px;
+
 }
 footer{
     background-color: $black;

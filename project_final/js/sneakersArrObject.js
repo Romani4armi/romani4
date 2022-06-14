@@ -12,7 +12,7 @@ var sneakersArr=[
              
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки WMNS NIKE AIR MAX 2X ' , 
         background: 'image/sneaker/Rectangle_28-1.png' , 
         newSneker: false , 
@@ -23,7 +23,7 @@ var sneakersArr=[
         idProdukt: 1,  
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W NIKE AIR MAX ZM950 ' , 
         background: 'image/sneaker/Rectangle_28-2.png' , 
         newSneker:false, 
@@ -34,7 +34,7 @@ var sneakersArr=[
         idProdukt: 2,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W AIR MAX 270 ' , 
         background: 'image/sneaker/Rectangle_28-3.png ' , 
         newSneker: false, 
@@ -45,7 +45,7 @@ var sneakersArr=[
         idProdukt: 3,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W NIKE REACT ART3MIS' , 
         background: ' image/sneaker/Rectangle_28-4.png' , 
         newSneker:true , 
@@ -56,7 +56,7 @@ var sneakersArr=[
         idProdukt: 4,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W AF1 PIXEL ' , 
         background: ' image/sneaker/Rectangle_28-5.png' , 
         newSneker:false , 
@@ -67,7 +67,7 @@ var sneakersArr=[
         idProdukt: 5,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: ' Кроссовки WMNS NIKE SUPERREP GROOVE ' , 
         background: 'image/sneaker/Rectangle_28-6.png' , 
         newSneker:false , 
@@ -78,7 +78,7 @@ var sneakersArr=[
         idProdukt: 6,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: ' Кроссовки WMNS NIKE RYZ 365 ' , 
         background: 'image/sneaker/Rectangle_28-7.png' , 
         newSneker:false , 
@@ -89,7 +89,7 @@ var sneakersArr=[
         idProdukt: 7,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки ZOOM 2K WOMEN S SHOE ' , 
         background: 'image/sneaker/Rectangle_28-8.png' , 
         newSneker:false , 
@@ -100,7 +100,7 @@ var sneakersArr=[
         idProdukt: 8,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: ' Кроссовки W AF1 SHADOW ' , 
         background: ' image/sneaker/Rectangle_28-9.png' , 
         newSneker:false , 
@@ -111,7 +111,7 @@ var sneakersArr=[
         idProdukt: 9,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W NIKE AIR MAX ZM950 ' , 
         background: 'image/sneaker/Rectangle_28-10.png' , 
         newSneker: false, 
@@ -122,7 +122,7 @@ var sneakersArr=[
         idProdukt: 10,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки M2K TEKNO WOMENS SHOE ' , 
         background: 'image/sneaker/Rectangle_28-11.png' , 
         newSneker: false, 
@@ -133,7 +133,7 @@ var sneakersArr=[
         idProdukt: 11,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки ZOOM 2K WOMENS SHOE ' , 
         background: 'image/sneaker/Rectangle_28-12.png' , 
         newSneker:false , 
@@ -144,7 +144,7 @@ var sneakersArr=[
         idProdukt: 12,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: ' Кроссовки AIR MONARCH IV ' , 
         background: ' image/sneaker/Rectangle_28-13.png' , 
         newSneker:false , 
@@ -155,7 +155,7 @@ var sneakersArr=[
         idProdukt: 13,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W AIR MAX EXOSENSE ' , 
         background: ' image/sneaker/Rectangle_28-14.png' , 
         newSneker:false , 
@@ -166,7 +166,7 @@ var sneakersArr=[
         idProdukt: 14,
     },
     {
-        brend: 'Nike ',
+        brend: 'Nike',
         description: 'Кроссовки W NIKE REACT ELEMENT 55 ' , 
         background: 'image/sneaker/Rectangle_28-15.png' , 
         newSneker:false , 

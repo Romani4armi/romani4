@@ -36,6 +36,7 @@ ul.innerHTML=html_slid;
 // var prodVis='15,14,13';
 // prodVis+=','+idProdukt_local;
 // localStorage.smotr=prodVis;
+
 localStorage.smotr.length<5?localStorage.smotr='15,14,13':true;
 localStorage.basketId=',';
 localStorage.count=0;
@@ -59,4 +60,13 @@ localStorage.brend='';
         localStorage.price+=sneakersArr[i].price+','
         localStorage.idProdukt+=sneakersArr[i].idProdukt+','
     }
-    
+    document.onmousemove = function(event){
+      let x = event.x-950;
+      let y = event.y-800;
+     
+    x=x/50;
+    y=y/50;
+  document.querySelector('.choice_sneaker').style.backgroundPosition=''+(x-130)+'px '+(y-42)+'px';
+  
+  };
+ 

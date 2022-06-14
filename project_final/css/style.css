@@ -166,8 +166,21 @@ header div.conteiner {
       width: 60px;
       height: 34px;
       background-color: #fff; }
-    header div.conteiner ul:last-of-type a:nth-child(1) li {
-      background: url(../image/svg/poisk.svg) center center no-repeat; }
+    header div.conteiner ul:last-of-type li:nth-child(1) {
+      background: url(../image/svg/poisk.svg) center center no-repeat;
+      position: relative; }
+      header div.conteiner ul:last-of-type li:nth-child(1) input.poisk {
+        position: absolute;
+        height: 40px;
+        width: 400px;
+        border-radius: 10px;
+        border: solid 1px #AAAAAA;
+        top: 45px;
+        right: 100px;
+        padding-left: 25px;
+        display: none; }
+    header div.conteiner ul:last-of-type li:nth-child(1):hover input.poisk {
+      display: block; }
     header div.conteiner ul:last-of-type a:hover {
       -webkit-animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both;
       animation: scale-up-center2 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1 both; }
@@ -358,7 +371,7 @@ div.cards_sneaker > ul {
           color: #ffffff; }
     .choice .conteiner .choice_sneaker {
       background: url(../image/sneakers.png) center no-repeat;
-      background-size: cover;
+      background-size: 120%;
       padding-top: 1px;
       padding-bottom: 46px;
       margin-left: -1px; }
@@ -395,6 +408,10 @@ div.cards_sneaker > ul {
         text-align: center;
         margin: auto;
         margin-top: 45px; }
+
+.choice_sneaker_parand {
+  overflow: hidden;
+  margin-left: -2px; }
 
 footer {
   background-color: #181818; }
