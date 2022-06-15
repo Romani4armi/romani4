@@ -18,6 +18,8 @@ const input1=document.getElementById('i-1');
 const inputs=[input0,input1];
 rangeSlider.noUiSlider.on('update', function(values,handle){
     inputs[handle].value=Math.round(values[handle]);
+   
+  rangeFilters(handle,Math.round(values[handle]))
 });
 const setRangeSlider= (i,value)=>{
     var arr = [null,null];
@@ -28,3 +30,4 @@ const setRangeSlider= (i,value)=>{
         el.addEventListener('change',(e)=>{setRangeSlider(index,e.currentTarget.value);});
     });
 }
+

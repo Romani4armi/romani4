@@ -61,14 +61,14 @@
                     <li class="li_title">кОЛЛЕКЦИИ</li>
                     <li class="li_title">фИЛЬТРЫ</li>
                     <li class="li_title">бренд</li>
-                    <li><input name="brendsn" onclick="sneakerBrend('Nike')" type="checkbox" value="Nike"> Nike</li>
-                    <li><input name="brendsn" onclick="sneakerBrend('Adidas')"  type="checkbox" value="Adidas"> Adidas</li>
-                    <li><input name="brendsn" onclick="sneakerBrend('Puma')"  type="checkbox" value="Puma">Puma </li>
-                    <li><input name="brendsn"  onclick="sneakerBrend('Reebok')"  type="checkbox" value="Reebok"> Reebok</li>
-                    <li><input  name="brendsn" onclick="sneakerBrend('Converse')"  type="checkbox" value="Converse"> Converse</li>
-                    <li><input  name="brendsn"  onclick="sneakerBrend('Dr. Martens')" type="checkbox" value="Dr_Martens"> Dr. Martens</li>
-                    <li><input  name="brendsn" onclick="sneakerBrend('New Balance')"  type="checkbox" value="New_Balance"> New Balance</li>
-                    <li><input  name="brendsn" onclick="sneakerBrend('Fila')"  type="checkbox" value="Fila"> Fila</li>
+                    <li><input name="brendsn" onchange="sneakerBrend('Nike')" type="checkbox" id="Nike"> Nike</li>
+                    <li><input name="brendsn" onchange="sneakerBrend('Adidas')"  type="checkbox" id="Adidas"> Adidas</li>
+                    <li><input name="brendsn" onchange="sneakerBrend('Puma')"  type="checkbox" id="Puma">Puma </li>
+                    <li><input name="brendsn"  onchange="sneakerBrend('Reebok')"  type="checkbox" id="Reebok"> Reebok</li>
+                    <li><input  name="brendsn" onchange="sneakerBrend('Converse')"  type="checkbox" id="Converse"> Converse</li>
+                    <li><input  name="brendsn"  onchange="sneakerBrend('Dr. Martens')" type="checkbox" id="Dr. Martens"> Dr. Martens</li>
+                    <li><input  name="brendsn" onchange="sneakerBrend('New Balance')"  type="checkbox" id="New Balance"> New Balance</li>
+                    <li><input  name="brendsn" onchange="sneakerBrend('Fila')"  type="checkbox" id="Fila"> Fila</li>
                     <li class="li_title">цена</li>
                     <li class="slider_output" id="slider_output"> </li>
                     <li class="min_max"> <div>Min</div>      <div>Max</div></li>
@@ -168,9 +168,10 @@
 </div> 
 <script src="js/jquery.js"></script>
 <script src="js/nouislider.min.js"></script>
-<script src="js/polzunok.js"></script>
+
 <script src="js/sneakersArrObject.js"></script>
 <script src="js/icon.js"></script>
 <script src="js/click_basket.js"></script>
+<script src="js/polzunok.js"></script>
 </body>
 </html>
