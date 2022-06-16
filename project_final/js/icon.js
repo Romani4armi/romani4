@@ -42,6 +42,7 @@ function iconLoad(idArr){  //функция для построения икон
     for(var i=0; i<sneakersArr.length; i++){
         if (idArr.includes(sneakersArr[i].idProdukt)) {
             counterIcon++;
+            if (counterIcon==16)break;
         sneakersArr[i].newSneker==true?newSnekerV='style="display:block"':newSnekerV='';
         sneakersArr[i].hit==true?hitTovar='style="display:block"':hitTovar='';
         sneakersArr[i].discount>0?discountSneaker='style="display:block"':discountSneaker='';
@@ -68,7 +69,7 @@ function iconLoad(idArr){  //функция для построения икон
              <p>
             <span>${sneakersArr[i].brend} </span> /${sneakersArr[i].description}
              </p> 
-         <div> ${sneakersArr[i].price} р. </div>   
+         <div> ${sneakersArr[i].price} р.  </div>   
           <a/>                   
      </li>
          `
@@ -96,10 +97,10 @@ iconLoad(iconLoadArr);
 
     function sneakerBrend(a){ //фильтр по брендам
     var arr;
-       
+    //iconLoadArr   
     if ((typeof a)== 'string') { 
          
-        brendArr=localStorage.brendCheckbox.split(','); 
+       // brendArr=localStorage.brendCheckbox.split(','); 
                    
         if ( document.getElementById(a).checked) {
             brendArr.push(a);
@@ -116,18 +117,33 @@ iconLoad(iconLoadArr);
       
     } 
     
-     localStorage.brendCheckbox=brendArr.join(',');
+     //localStorage.brendCheckbox=brendArr.join(',');
  
-    console.log('dliina ' + iconLoadArr.length)
 
 
-     iconLoadArr  = brendToId(brendArr);
-    console.log(iconLoadArr)
+     iconLoadArr = brendToId(brendArr) ;
+    
     
    
-    iconLoad(iconLoadArr)
+    rangeFilters()
      }
     
+     function chekBrendId(a){
+        console.log('1  '+a);
+        for (var i=0; i<a.length; i++){
+            if (iconLoadArr.includes(a[i])){
+
+            } else {
+                a[i] = '';
+            }
+        }
+        for (var i=0; i<a.length; i++){
+            iconLoadArr[i]=a[i]
+        }
+        console.log(iconLoadArr)
+     }
+
+
 
  function brendToId(arr){
     var iconLoadArr2=[];
@@ -143,10 +159,11 @@ iconLoad(iconLoadArr);
  }
  var rangeArr =[]; 
  var rangeArr2 =[];
-   
+ var a1;
+ var b1;
  function rangeFilters(a,b){ //a номер ползунка, б значение
     
-//iconLoadArr
+
      for (var i=0; i<iconLoadArr.length; i++){
         if (rangeArr.includes(iconLoadArr[i])) {} else {
             if (a==0&&b>rangeToId(iconLoadArr[i])){

@@ -1451,7 +1451,7 @@ ul.card_cneakers{
         background: url(../image/svg/heart.svg) center no-repeat;
         background-size: 90%;
         margin:5px;
-        border: solid 1px white;
+        border: solid 0px white;
         z-index: 2;
        
     }
@@ -1493,4 +1493,10 @@ header div.conteiner ul:last-of-type a:nth-child(3) li{
 }
 header div.conteiner ul:last-of-type a:nth-child(2) li{
     padding-top: 1px;
+}
+.icon_sneaker ul.card_cneakers > li div.card_sneakers_background{
+    background-size: 100%;
+}
+.icon_sneaker{
+    width: 100%;
 }
