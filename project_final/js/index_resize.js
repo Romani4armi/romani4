@@ -17,7 +17,7 @@ $(document).ready(function(){
   heightKonteiner = this.innerWidth;
   
  });
- 
+localStorage.smotr='';
 localStorage.test=1;
 var ul=document.querySelector(".slider");
 var html_slid = '';
