@@ -9,7 +9,7 @@ var sneakersArr=[
        heart: false,
        price: 274,   
        idProdukt: 0,  
-       gender: false,      
+       gender: true,      
     },
     {
         brend: 'Nike',
@@ -33,7 +33,7 @@ var sneakersArr=[
         heart: false,
         price: 458,
         idProdukt: 2,
-        gender: false,
+        gender: true,
     },
     {
         brend: 'Nike',
@@ -129,7 +129,7 @@ var sneakersArr=[
         heart: false,
         price: 458,
         idProdukt: 10,
-        gender: false,
+        gender: true,
     },
     {
         brend: 'Nike',
@@ -141,7 +141,7 @@ var sneakersArr=[
         heart: false,
         price:284 ,
         idProdukt: 11,
-        gender: false,
+        gender: true,
     },
     {
         brend: 'Nike',
@@ -165,7 +165,7 @@ var sneakersArr=[
         heart: false,
         price:164 ,
         idProdukt: 13,
-        gender: false,
+        gender: true,
     },
     {
         brend: 'Nike',

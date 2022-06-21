@@ -1,3 +1,4 @@
+var pageCheck='Страница товара';
 var div=document.querySelector(".sneaker_produkt");
 var html_prod = '';
 var arrBasket = localStorage.heart.split(',');
@@ -202,5 +203,8 @@ for(var i=0;i<3;i++){
 div_4.innerHTML=html_nice;
 
 
-
+function genderSneker(a){ //отправляет в сторож данные о гендере 
+    localStorage.genderSnekers=a
+    
+  }
 

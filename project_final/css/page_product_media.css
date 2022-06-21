@@ -6,6 +6,7 @@
 @media  all and (max-width:1150px){
     ul.card_cneakers li:last-child{
         display: block;
+        
     }
     .body_produkt .conteiner{
         flex-wrap: wrap;

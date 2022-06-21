@@ -1562,4 +1562,15 @@ header div.conteiner ul:last-of-type a:nth-child(2) li {
 .icon_sneaker {
   width: 100%; }
 
+.content_body .conteiner .filter_woomen li {
+  width: 220px; }
+
+header div.conteiner ul:first-of-type li {
+  margin-top: 2px;
+  margin-left: 5px; }
+
+.page_number li {
+  margin-left: 10px;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -16,9 +16,9 @@
 
 
 
-
-
- var heartArr=localStorage.heart.split(',');
+    routePageFunc('<a href="index.html">Главная</a> / <a href="index_catalog.html"> Каталог товаров</a>')
+var pageCheck='Каталог товаров';
+var heartArr=localStorage.heart.split(',');
 
 localStorage.count=0;
 var iconLoadArr=[]; // массив с  выводимыми id
@@ -30,19 +30,43 @@ for(var i=0; i<sneakersArr.length; i++){ //получение дубликата
     iconLoadArrRes[i]= sneakersArr[i].idProdukt;
 }
 
+function idArrDelete(arr){
+   
+    for(var i=0; i<arr.length;i++){
+        
+        if (parseInt(arr[i])+''=='NaN')   {
+            arr.splice((i),1);
+            idArrDelete(arr);
+            break
+           
+            
+        }
+        
+}
 
+return arr;
+}
+
+var counterIconPage = 0;
 function iconLoad(idArr){  //функция для построения иконок для сайта
     var ul=document.querySelector(".card_cneakers");
     var html = '';
     var newSnekerV;
     var hitTovar;
     var discountSneaker;
-    var counterIcon=0;
-
-    for(var i=0; i<sneakersArr.length; i++){
+    var counterIcon=counterIconPage;
+    var idArr2 = [];
+   
+    for(var i=0;i<idArr.length;i++){
+        idArr2[i]=idArr[i];
+    }
+   idArr2=idArrDelete(idArr2);
+   
+    
+    for(var i=counterIconPage; i<sneakersArr.length; i++){
         if (idArr.includes(sneakersArr[i].idProdukt)) {
             counterIcon++;
-            if (counterIcon==16)break;
+            
         sneakersArr[i].newSneker==true?newSnekerV='style="display:block"':newSnekerV='';
         sneakersArr[i].hit==true?hitTovar='style="display:block"':hitTovar='';
         sneakersArr[i].discount>0?discountSneaker='style="display:block"':discountSneaker='';
@@ -53,7 +77,7 @@ function iconLoad(idArr){  //функция для построения икон
          
          html+=`
          <li > 
-             <div class="up_icon" >
+             <div class="up_icon" style="background: url(${sneakersArr[i].background});">
          
                  <div ${newSnekerV}>новинка</div>
                  <div  ${hitTovar} >хит</div>
@@ -74,14 +98,55 @@ function iconLoad(idArr){  //функция для построения икон
      </li>
          `
         }
+        if (counterIcon==counterIconPage+16)break;
     }
+    
     ul.innerHTML = html;
     var kolProdukt = document.getElementById('kvoProdukt'); //вывод количества загрузившихся товаров
-    kolProdukt.innerText=counterIcon;
+    kolProdukt.innerText=idArr2.length;
+   pageNumber(Math.ceil(idArr2.length/16))
     
 }
-iconLoad(iconLoadArr);
 
+function sortingSneker(a){
+    iconLoadArr=[];
+    for (var i=0; i<sneakersArr.length;i++){
+        
+        if((a+'')==(sneakersArr[i].gender+'')){
+            iconLoadArr.push(sneakersArr[i].idProdukt)
+             
+        }
+        
+    }
+  
+}
+var pageCheckGender;
+function genderSnecker2(a){ //отправляет в сторож данные о гендере 
+    localStorage.genderSnekers=a
+    
+  }
+  console.log(localStorage.genderSnekers)
+if(localStorage.genderSnekers==''){
+ 
+} else {
+    sortingSneker(localStorage.genderSnekers)
+    if (localStorage.genderSnekers=='true'){
+        document.getElementById('genderSnekers').innerText='Мужские кроссовки';
+        pageCheckGender=`
+        <a href="index.html">Главная</a> / <a href="index_catalog.html"> Каталог товаров</a> / 
+        <a href="index_catalog.html"> Мужские кроссовоки</a>
+     `;
+    } else {
+        document.getElementById('genderSnekers').innerText='Женские кроссовки';
+        pageCheckGender=`
+        <a href="index.html">Главная</a> / <a href="index_catalog.html"> Каталог товаров</a> / 
+        <a href="index_catalog.html"> Женские кроссовоки</a>
+     `;
+    }
+    routePageFunc(pageCheckGender)
+}
+iconLoad(iconLoadArr);
+localStorage.genderSnekers='';
 
 
 
@@ -206,3 +271,55 @@ iconLoad(iconLoadArr);
         }
     }
  }
+ 
+ //путь по странице 
+function routePageFunc(a){
+   
+    var  routePage = document.querySelector('#routePage' )
+    routePage.innerHTML= a ;
+ 
+}
+
+function pageNumber(a){ //принимает количество страниц
+    var pageNumberVar = document.querySelector('.page_number');
+    var htmlPage=``;
+    for (var i=1; i<=a;i++){
+        htmlPage+=`<li onclick="pageNumberRoute(${i})">${i}</li>`
+    }
+    var htmlPageNumber = `
+    <li onclick="pageNumberRoute('min')">
+        <div>&lt;</div>
+        <div>Назад</div>
+    </li>
+     ${htmlPage}
+    <li onclick="pageNumberRoute('max')">
+        <div>Вперед</div>
+        <div>&gt;</div>
+    </li>
+    
+    `
+    pageNumberVar.innerHTML=htmlPageNumber;
+
+}
+var aZnach=1;
+function pageNumberRoute(a){
+    
+           
+        if (a=='min'){
+            aZnach--;
+            aZnach<=0?aZnach++:true;
+            a = aZnach;
+        }
+        if (a=='max'){
+            aZnach++;
+            console.log(iconLoadArr.length)
+            aZnach>Math.ceil(iconLoadArr.length/16)?aZnach--:true
+            a = aZnach;
+            console.log(a)
+        }
+        aZnach = a
+        counterIconPage=(a-1)*16;
+        
+    
+   rangeFilters()
+}

@@ -22,14 +22,14 @@
                 <div><a href="index.html">SNEAKER  SPACE.</a></div>
                 <ul>
                     <li><a href="index_catalog.html">Все товары</a></li>
-                    <li><a href="index_catalog.html">Женские</a></li>
-                    <li><a href="index_catalog.html">Мужские</a></li>
+                    <li><a href="index_catalog.html"  onclick="genderSneker(false)">Женские</a></li>
+                    <li><a href="index_catalog.html"  onclick="genderSneker(true)">Мужские</a></li>
                     <li><a href="index_catalog.html">Скидки</a></li>
                     <li><a href="index_catalog.html">Бренды</a></li>
                     <li><a href="basket.html">Контакты</a></li>
                 </ul>
                 <ul>
-                    <li id="vkl_poisk" onclick="vklPoisk()"> <input type="text"  class="poisk"> </li>
+                    <li id="vkl_poisk" onclick="vklPoisk()"> <input type="text" onclick="vklPoisk()" class="poisk"> </li>
                     <a href="basket.html"><li><p class="counter_basket"></p>  </li></a>
                     <a href="productPage.html"><li> </p> </li></a>
                     <a href=""><li> </li></a>
@@ -38,7 +38,7 @@
         </header>
         <div class="path">
             <ul class="conteiner">
-                <li>Главная</li>
+                <li id="routePage"><a href="index.html">Главная</a> / <a href="index_catalog.html">Каталог</a> / <a href="basket.html"> Корзина</a></li>
             </ul>
         </div>
         <div class="basket_basket"> 

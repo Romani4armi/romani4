@@ -2,6 +2,7 @@ var div=document.querySelector('.card_basket');
 var html_bask='';
 var baskArr=[];
 var summa=0;
+var pageCheck='Корзина';
 
 function deleteProdukt(a){
    var arrayHeart=localStorage.heart.split(',')
@@ -107,3 +108,7 @@ function summaKurier(){
  basketRight.innerHTML= html_summa;
  counter_P.innerText=counterProduct;
  localStorage.heart=arrBasket.join(',');
+ function genderSneker(a){ //отправляет в сторож данные о гендере 
+    localStorage.genderSnekers=a
+    
+  }

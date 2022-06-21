@@ -10,22 +10,33 @@ $(document).ready(function(){
       });
       
 });
-var heightKonteiner;
-window.addEventListener('resize',function(){
- heightKonteiner = this.innerWidth;
-});
+ var heightKonteiner;
+ window.addEventListener('resize',function(){
+  heightKonteiner = this.innerWidth;
   
+ });
+ 
 localStorage.test=1;
 var ul=document.querySelector(".slider");
 var html_slid = '';
-
+resizeSlider(document.querySelector('.conteiner').offsetWidth)
+function resizeSlider(a){
+  console.log(a)
 for(var i=0; i<sneakersArr.length; i++){
   
   html_slid+=`
-  <li class="slider_slick"><a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><img src="${sneakersArr[i].background}" alt="sneaker"  width="${document.querySelector('.conteiner').offsetWidth/3.35}px" height="${document.querySelector('.conteiner').offsetWidth/3.35}px"></a></li>
+  <li class="slider_slick"><a onclick="localStorage.test = ${sneakersArr[i].idProdukt}"  href="productPage.html"><img src="${sneakersArr[i].background}" alt="sneaker"  width="${a/3.35}px" height="${a/3.35}px"></a></li>
   `
 }
 ul.innerHTML=html_slid;
+}
+function genderSneker(a){ //отправляет в сторож данные о гендере 
+  localStorage.genderSnekers=a
+  
+}
+
+
+
 // var cadId = document.getElementById('card_id');
 // cadId.addEventListener('click', function(){
   

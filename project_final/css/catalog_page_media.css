@@ -12,6 +12,9 @@
     footer .conteiner div.sneaker_2{
         flex-wrap: wrap;
     }
+    header div.conteiner ul:last-of-type li:nth-child(1) input.poisk{
+        right: -300px;
+    }
 }
 @media  all and (max-width:670px){
     .content_body .conteiner{
@@ -25,6 +28,13 @@
     }
     header div.conteiner ul:first-of-type{
         flex-wrap: wrap;
+    }
+    header div.conteiner ul:last-of-type li:nth-child(1) input.poisk{
+        right: -220px;
+        width: 300px;
+    }
+    .icon_sneaker ul.card_cneakers{
+        justify-content: space-around;
     }
 }
 @media  all and (max-width:400px){
@@ -58,4 +68,18 @@
     footer .conteiner div.sneaker_2 ul:last-of-type li:nth-child(2){
         width: 250px;
     }
+    header div.conteiner ul:last-of-type li:nth-child(1) input.poisk{
+        right: -208px;
+        width: 265px;
+    }
+    .content_body .conteiner .filter_woomen{
+        margin-left: 30px;
+    }
+    .icon_sneaker ul:first-of-type{
+        justify-content: space-around;
+    }
+    .content_body .conteiner .filter_woomen li{
+        width: 245px;
+    }
+
 }
