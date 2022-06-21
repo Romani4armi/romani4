@@ -21,7 +21,7 @@
                 <li><a href="index_catalog.html">Все товары</a></li>
                 <li><a href="index_catalog.html" onclick="genderSnecker2('false')">Женские</a></li>
                 <li><a href="index_catalog.html" onclick="genderSnecker2('true')">Мужские</a></li>
-                <li><a href="index_catalog.html">Скидки</a></li>
+                <li  onclick="discountMax()">Скидки</li>
                 <li><a href="index_catalog.html">Бренды</a></li>
                 <li><a href="basket.html">Контакты</a></li>
             </ul>
@@ -90,11 +90,11 @@
             <div class="icon_sneaker">
                 <div>сортировать по</div>
                 <ul>
-                    <li><a href="">Умолчанию</a></li>
-                    <li><a href="">Цена: по возрастанию</a></li>
-                    <li><a href="">Цена: по убыванию</a></li>
-                    <li><a href="">Максимальной скидке</a></li>
-                    <li><a href="">Новинкам</a></li>
+                    <li onclick="umolchan()">Умолчанию</li>
+                    <li onclick="priceUp()">Цена: по возрастанию</li>
+                    <li onclick="priceBottom()">Цена: по убыванию</li>
+                    <li onclick="discountMax()">Cкидке</li>
+                    <li onclick="newSneakers()">Новинкам</li>
                 </ul>
                 <ul class="card_cneakers">
                     <li> 

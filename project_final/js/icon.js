@@ -7,8 +7,10 @@
     // localStorage.heart
     // localStorage.price
     // localStorage.idProdukt
-
-    
+    var sneakersArrDabl=[];
+    for (var i=0; i<sneakersArr.length;i++){
+        sneakersArrDabl[i]=sneakersArr[i]
+    }
 
 
 
@@ -322,4 +324,103 @@ function pageNumberRoute(a){
         
     
    rangeFilters()
+}
+
+function umolchan(){
+    for (var i=0;i<sneakersArr.length;i++){
+        iconLoadArr[i] = sneakersArr[i].idProdukt
+    }
+    for (var i=0; i<sneakersArr.length;i++){
+        sneakersArr[i]=sneakersArrDabl[i]
+    }
+    rangeFilters()
+}
+function priceUp(){
+    for (var i=0;i<sneakersArr.length;i++){
+        iconLoadArr[i] = sneakersArr[i].idProdukt
+    }
+    var x1={};
+    for (var i=0;i<sneakersArr.length-1;i++){
+        console.log(sneakersArr[i].price)
+       if(sneakersArr[i].price > sneakersArr[i+1].price ){
+        x1=sneakersArr[i+1];
+        sneakersArr[i+1] = sneakersArr[i];
+        sneakersArr[i] = x1;
+        i=0
+        console.log(sneakersArr[i].price)
+       }  else {
+        
+        continue
+       }
+    }
+    for (var i=0;i<sneakersArr.length-1;i++){
+        console.log(sneakersArr[i].price)
+       if(sneakersArr[i].price > sneakersArr[i+1].price ){
+        x1=sneakersArr[i+1];
+        sneakersArr[i+1] = sneakersArr[i];
+        sneakersArr[i] = x1;
+        i=0
+        console.log(sneakersArr[i].price)
+       }  else {
+        
+        continue
+       }
+    }
+    
+    rangeFilters()
+    
+}
+
+function priceBottom(){
+    var x1={};
+    for (var i=0;i<sneakersArr.length;i++){
+        iconLoadArr[i] = sneakersArr[i].idProdukt
+    }
+    for (var i=0;i<sneakersArr.length-1;i++){
+        console.log(sneakersArr[i].price)
+       if(sneakersArr[i].price < sneakersArr[i+1].price ){
+        x1=sneakersArr[i+1];
+        sneakersArr[i+1] = sneakersArr[i];
+        sneakersArr[i] = x1;
+        i=0
+        console.log(sneakersArr[i].price)
+       }  else {
+        
+        continue
+       }
+    }
+    for (var i=0;i<sneakersArr.length-1;i++){
+        console.log(sneakersArr[i].price)
+       if(sneakersArr[i].price < sneakersArr[i+1].price ){
+        x1=sneakersArr[i+1];
+        sneakersArr[i+1] = sneakersArr[i];
+        sneakersArr[i] = x1;
+        i=0
+        console.log(sneakersArr[i].price)
+       }  else {
+        
+        continue
+       }
+    }
+    
+    rangeFilters()
+    
+}
+function discountMax (){
+    iconLoadArr=[];
+    for (var i=0;i<sneakersArr.length;i++){
+        if (sneakersArr[i].discount>0){
+            iconLoadArr.push(sneakersArr[i].idProdukt)
+        }
+    }
+    iconLoad(iconLoadArr)
+} 
+function    newSneakers(){
+    iconLoadArr=[];
+    for (var i=0;i<sneakersArr.length;i++){
+        if (sneakersArr[i].newSneker){
+            iconLoadArr.push(sneakersArr[i].idProdukt)
+        }
+    }
+    iconLoad(iconLoadArr)
 }
